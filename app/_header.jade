@@ -1,0 +1,283 @@
+header.header.clearfix
+  .header-top
+    .container
+      .logo
+        a(href="#") 
+          img(src="images/logo-vertical.svg", alt="")
+      .header-navigation
+        ul
+          li
+            span Услуги
+          li
+            a(href="#") О нас
+          li
+            a(href="#") Акции 
+          li
+            a(href="#") Статьи 
+          li
+            a(href="#") Видео 
+          li
+            a(href="#")  Контакты
+      .header-phones
+        a.dropdown-button(href='#', data-activates='drop-phones')
+          span.icon-01-phone
+        // Dropdown Structure
+        ul#drop-phones.dropdown-content.drop-phones
+          li
+            a(href='tel:+380445020102')
+              span.icon-01-phone
+              | +38 
+              span.fm (044) 502 01 02
+          li
+            a(href='tel:+380677778219')
+              span.icon-02-kievstar
+              | +38 
+              span.fm (067) 777 82 19
+          li
+            a(href='tel:+380667777842')
+              span.icon-03-vodafone
+              | +38 
+              span.fm (066) 777 78 42
+  .header-bottom
+    .container
+      .row
+        .col.l3.12
+          .navigation-catalog
+            .dropdown-button.navigation-catalog__butt(data-activates='drop-catalog')
+              | Каталог
+              .hamburger.hamburger--arrow.js-hamburger.is-active
+                .hamburger-box
+                  .hamburger-inner
+            #drop-catalog.dropdown-content.navigation-catalog-body.visible
+              .navigation-catalog-inner
+                .navigation-catalog__nav
+                  ul
+                    li(data-menu="menu1")
+                      a(href="#")
+                        img(src="images/ico-catrgories-01.svg", alt="")
+                        span Оборудование для бассейнов
+                    li(data-menu="menu2")
+                      a(href="#")
+                        img(src="images/ico-catrgories-02.svg", alt="")
+                        span Отопление и ГВС
+                    li(data-menu="menu3")
+                      a(href="#")
+                        img(src="images/ico-catrgories-03.svg", alt="")
+                        span Вентиляция и кондиционирование
+                    li(data-menu="menu4")
+                      a(href="#")
+                        img(src="images/ico-catrgories-04.svg", alt="")
+                        span Канализация
+                .navigation-catalog__body
+                  .catalog-menu(data-menu="menu1")
+                    .row
+                      .col.l8
+                        ul
+                          li
+                            a(href="#") Химия для бассейнов
+                          li
+                            a(href="#") Обогрев воды в бассейне
+                          li
+                            a(href="#") Системы фильтрации бассейна
+                          li
+                            a(href="#") Аксессуары для обслуживания бассейна
+                          li
+                            a(href="#") Дезинфекция
+                          li
+                            a(href="#") Трубы/Фитинги
+                          li 
+                            a(href="#") Облицовка бассейнов и прудов
+                          li
+                            a(href="#") Насосы для бассейна
+                          li
+                            a(href="#") Закладные
+                          li
+                            a(href="#") Подводное освещение
+                          li
+                            a(href="#") Гидромассажные бассейны, Сауны, Парогенераторы, Электрокаменки
+                          li
+                            a(href="#") Водопады / Противотоки
+                          li
+                            a(href="#") Лестницы / Поручни
+                          li
+                            a(href="#") Аксессуары для обслуживания бассейна
+                          li
+                            a(href="#") Дезинфекция
+                          li
+                            a(href="#") Трубы/Фитинги
+                          li 
+                            a(href="#") Облицовка бассейнов и прудов
+                          li
+                            a(href="#") Насосы для бассейна
+                          li
+                            a(href="#") Закладные
+                          li
+                            a(href="#") Подводное освещение
+                      .col.l4
+                        .catalog-banner
+                          a(href="#")
+                            img(src="assets/images/banner.jpg", alt="")
+        .col.l6.s12
+          .head-search
+            form(action="#")
+              input(type="search",placeholder="Поиск ")
+              span.icon-10-search
+              button.btn(type="submit")
+                .btn-animate
+                span Искать
+            .head-search-drop.dropdown-content
+              .cart-container-box
+                .cart-row
+                  .cart-col.cart-col--1
+                    a(href='#').cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/cart1.jpg", alt="")
+                      span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                  .cart-col.cart-col--3
+                    span.js_item_total 14000
+                    |&nbsp; грн
+                .cart-row
+                  .cart-col.cart-col--1
+                    a(href='#').cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/cart1.jpg", alt="")
+                      span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                  .cart-col.cart-col--3
+                    span.js_item_total 16000
+                    |&nbsp; грн
+                .cart-row
+                  .cart-col.cart-col--1
+                    a(href='#').cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/cart1.jpg", alt="")
+                      span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                  .cart-col.cart-col--3
+                    span.js_item_total 20000
+                    |&nbsp; грн
+              .go-to-button.align-center
+                a(href="#")
+                  | Все результаты
+                  span.icon-16-arrow-link
+        .col.l3.s12
+          .head-dropdown
+            .dropdown-button.head-dropdown__butt(data-activates='drop-enter')
+              span.icon-09-sign-in
+              | Вход
+              span.icon-05-arrow-down-header
+            #drop-enter.dropdown-content.drop-head.drop-head--form
+              .drop-enter__box.active
+                .drop-heading Вход в личный кабинет
+                form(action="#").js_validate
+                  .input-field.required-field(data-error='Поле не заполнено')
+                    span.label-field Email*
+                    input(type='email', required='',data-validate="email")
+                  .input-field.required-field(data-error='Поле не заполнено')
+                    span.label-field *Пароль
+                    input(type='password', required='')
+                  .cheack-box
+                    input#check1.filled-in(type='checkbox')
+                    label(for='check1') Запомнить меня
+                  button(type="submit").btn
+                    .btn-animate
+                    span Войти
+
+
+              .drop-enter__box
+                .drop-heading Вход в личный кабинет
+                form(action="#").js_validate
+                  .input-field.required-field(data-error='Поле не заполнено')
+                    span.label-field Email*
+                    input(type='email', required='',data-validate="email")
+                  .input-field.required-field(data-error='Пароли не совпадают')
+                    span.label-field *Пароль
+                    input.password(type='password', required='')
+                  .input-field.required-field(data-error='Пароли не совпадают')
+                    span.label-field *Повторить пароль
+                    input.password_1(type='password', required='')
+                  .form-warning
+                    | Регистрируясь, вы соглашаетесь с 
+                    a(href="#") пользовательским соглашением
+                  .capcha
+                    img(src="assets/images/capcha.jpg", alt="")
+                  button(type="submit").btn 
+                    .btn-animate
+                    span Зарегистрироваться
+              .go-to-button.align-center
+                a(href="#").js_change_form.active
+                  | Нет учетной записи? 
+                  span Зарегистрироваться 
+          .head-dropdown
+            .dropdown-button.head-dropdown__butt(data-activates='drop-cart')
+              span.icon-04-cart
+                i.cout 4
+              | Корзина
+              span.icon-05-arrow-down-header
+            #drop-cart.cart-container.dropdown-content.drop-head.drop-head--cart
+              .cart-container-box
+                .cart-row
+                  .cart-col.cart-col--1
+                    a(href='#').cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/cart1.jpg", alt="")
+                      span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                  .cart-col.cart-col--2
+                    .quantity-wrap
+                      span.minus-icon
+                        | &#8722;
+                      input.quantity(type='text', value='1',data-price-product="14000")
+                      span.plus-icon
+                        | +
+                  .cart-col.cart-col--3
+                    span.js_item_total 14000
+                    |&nbsp; грн
+                  .cart-col.cart-col--4
+                    span.icon-21-clear-filters.js_remove_item
+                .cart-row
+                  .cart-col.cart-col--1
+                    a(href='#').cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/cart1.jpg", alt="")
+                      span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                  .cart-col.cart-col--2
+                    .quantity-wrap
+                      span.minus-icon
+                        | &#8722;
+                      input.quantity(type='text', value='1',data-price-product="16000")
+                      span.plus-icon
+                        | +
+                  .cart-col.cart-col--3
+                    span.js_item_total 16000
+                    |&nbsp; грн
+                  .cart-col.cart-col--4
+                    span.icon-21-clear-filters.js_remove_item
+                .cart-row
+                  .cart-col.cart-col--1
+                    a(href='#').cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/cart1.jpg", alt="")
+                      span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                  .cart-col.cart-col--2
+                    .quantity-wrap
+                      span.minus-icon
+                        | &#8722;
+                      input.quantity(type='text', value='1',data-price-product="20000")
+                      span.plus-icon
+                        | +
+                  .cart-col.cart-col--3
+                    span.js_item_total 20000
+                    |&nbsp; грн
+                  .cart-col.cart-col--4
+                    span.icon-21-clear-filters.js_remove_item
+              .go-to-button.align-right
+                a(href="#")
+                  | Перейти в корзину
+                  span.icon-16-arrow-link
+
+                  
+
+
+
+
+
+
+

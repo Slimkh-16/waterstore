@@ -1,0 +1,112 @@
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 678;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1); }
+.progress {
+  z-index: 15;
+  margin: 0;
+  background-color:#cecece;
+}
+.progress .determinate, .progress .indeterminate {
+  background-color: #00a8e0;
+}
+.preloader-logo-box {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:#fff;
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 2.2s;
+}
+.preloader-logo {
+  position: absolute;
+  z-index: 15;
+  top: 50%;
+  transform:translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 2s;
+  svg {
+    display: inline-block;
+    overflow: visible;
+  }
+}
+.loading{
+  .preloader-buble {
+    transform-origin:left center;
+    animation:buble-anim 2s cubic-bezier(0.7, 0, 0.3, 1);
+    // transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .preloader-buble.preloader-buble--right {
+    transform-origin:right center;
+    animation:buble-anim2 2s cubic-bezier(0.7, 0, 0.3, 1);
+  }
+  .preloader {
+    height: 5px;
+    transition-delay:2.5s;
+  }
+}
+
+.preload-let {
+  opacity: 0;
+  transform:translateY(15px);
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.preload-letter{
+  g:nth-of-type(1) {.preload-let{transition-delay:0.1s}}
+  g:nth-of-type(2) {.preload-let{transition-delay:0.2s}}
+  g:nth-of-type(3) {.preload-let{transition-delay:0.3s}}
+  g:nth-of-type(4) {.preload-let{transition-delay:0.4s}}
+  g:nth-of-type(5) {.preload-let{transition-delay:0.5s}}
+  g:nth-of-type(6) {.preload-let{transition-delay:0.6s}}
+  g:nth-of-type(7) {.preload-let{transition-delay:0.7s}}
+  g:nth-of-type(8) {.preload-let{transition-delay:0.9s}}
+  g:nth-of-type(9) {.preload-let{transition-delay:1s}}
+  g:nth-of-type(10) {.preload-let{transition-delay:0.8s}}
+}
+.loading {
+  .preload-let {
+    opacity: 1;
+    transform:translateY(0px);
+  }
+  .preloader-logo  {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .preloader-logo-box {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loading.loaded .preloader { opacity: 0;visibility: hidden;transition-delay:0s; }
+@keyframes let-anim {
+  from {
+    opacity: 0;
+    transform:translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform:translateY(0px);
+  }
+}
+@keyframes buble-anim {
+  from {
+    opacity: 0;
+    transform:translate(-30px,-30px) rotate(90deg);
+  }
+}
+@keyframes buble-anim2 {
+  from {
+    opacity: 0;
+    transform:translate(30px,30px) rotate(90deg);
+  }
+}

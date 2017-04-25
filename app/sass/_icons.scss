@@ -1,0 +1,228 @@
+$icon_font_name:"Icons";
+@font-face {
+	font-family:$icon_font_name;
+	src: url('fonts/Icons.eot');
+	src: url('fonts/Icons.eot?#iefix') format('eot'),
+	url('fonts/Icons.woff') format('woff'),
+	url('fonts/Icons.ttf') format('truetype'),
+	url('fonts/Icons.svg#Icons') format('svg');
+}
+[class*='icon-']:before{
+   font-family: $icon_font_name;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+
+.icon-01-phone:before {
+	content:'\E001';
+}
+.icon-02-kievstar:before {
+	content:'\E002';
+}
+.icon-03-vodafone:before {
+	content:'\E003';
+}
+.icon-04-cart:before {
+	content:'\E004';
+}
+.icon-05-arrow-down-header:before {
+	content:'\E005';
+}
+.icon-06-arrow-up-header:before {
+	content:'\E006';
+}
+.icon-07-arrow-down:before {
+	content:'\E007';
+}
+.icon-08-arrow-up:before {
+	content:'\E008';
+}
+.icon-09-sign-in:before {
+	content:'\E009';
+}
+.icon-10-search:before {
+	content:'\E00A';
+}
+.icon-11-hamburger:before {
+	content:'\E00B';
+}
+.icon-12-hamburger-arrow:before {
+	content:'\E00C';
+}
+.icon-13-arrow-categories:before {
+	content:'\E00D';
+}
+.icon-14-arrow-right-karusel:before {
+	content:'\E00E';
+}
+.icon-15-arrow-left-karusel:before {
+	content:'\E00F';
+}
+.icon-16-arrow-link:before {
+	content:'\E010';
+}
+.icon-17-share:before {
+	content:'\E011';
+}
+.icon-18-arrow-categories:before {
+	content:'\E012';
+}
+.icon-19-info:before {
+	content:'\E013';
+}
+.icon-20-apply-filters:before {
+	content:'\E014';
+}
+.icon-21-clear-filters:before {
+	content:'\E015';
+}
+.icon-22-hide-filters:before {
+	content:'\E016';
+}
+.icon-23-fax:before {
+	content:'\E017';
+}
+.icon-24-minus-tovar:before {
+	content:'\E018';
+}
+.icon-25-plus-tovar:before {
+	content:'\E019';
+}
+.icon-26-clear-zakaz:before {
+	content:'\E01A';
+}
+.icon-27-back-to-shop:before {
+	content:'\E01B';
+}
+.icon-28-check:before {
+	content:'\E01C';
+}
+.icon-29-go-to-cart:before {
+	content:'\E01D';
+}
+.icon-30-not-paid:before {
+	content:'\E01E';
+}
+.icon-31-paid:before {
+	content:'\E01F';
+}
+.icon-32-cancel-zalaz:before {
+	content:'\E020';
+}
+.icon-33-down:before {
+	content:'\E021';
+}
+.icon-34-sort-down:before {
+	content:'\E022';
+}
+.icon-35-sort-up:before {
+	content:'\E023';
+}
+.icon-36-filters-icon:before {
+	content:'\E024';
+}
+.icon-37-buy-tovar:before {
+	content:'\E025';
+}
+.icon-38-one-click-button:before {
+	content:'\E026';
+}
+.icon-404:before {
+	content:'\E027';
+}
+.icon-ico-action:before {
+	content:'\E028';
+}
+.icon-ico-bestsellers:before {
+	content:'\E029';
+}
+.icon-ico-boiler-characteristics-01:before {
+	content:'\E02A';
+}
+.icon-ico-boiler-characteristics-02:before {
+	content:'\E02B';
+}
+.icon-ico-boiler-characteristics-03:before {
+	content:'\E02C';
+}
+.icon-ico-boiler-characteristics-04:before {
+	content:'\E02D';
+}
+.icon-ico-boiler-characteristics-05:before {
+	content:'\E02E';
+}
+.icon-ico-boiler-type-01:before {
+	content:'\E02F';
+}
+.icon-ico-boiler-type-02:before {
+	content:'\E030';
+}
+.icon-ico-boiler-type-03:before {
+	content:'\E031';
+}
+.icon-ico-calc:before {
+	content:'\E032';
+}
+.icon-ico-catrgories-01:before {
+	content:'\E033';
+}
+.icon-ico-catrgories-02:before {
+	content:'\E034';
+}
+.icon-ico-catrgories-03:before {
+	content:'\E035';
+}
+.icon-ico-catrgories-04:before {
+	content:'\E036';
+}
+.icon-ico-features-01:before {
+	content:'\E037';
+}
+.icon-ico-features-02:before {
+	content:'\E038';
+}
+.icon-ico-features-03:before {
+	content:'\E039';
+}
+.icon-ico-features-04:before {
+	content:'\E03A';
+}
+.icon-ico-how-it-works-01:before {
+	content:'\E03B';
+}
+.icon-ico-how-it-works-02:before {
+	content:'\E03C';
+}
+.icon-ico-how-it-works-03:before {
+	content:'\E03D';
+}
+.icon-ico-how-it-works-04:before {
+	content:'\E03E';
+}
+.icon-ico-logo-contacts:before {
+	content:'\E03F';
+}
+.icon-ico-play-video:before {
+	content:'\E040';
+}
+.icon-ico-tovar-features-01:before {
+	content:'\E041';
+}
+.icon-ico-tovar-features-02:before {
+	content:'\E042';
+}
+.icon-ico-tovar-features-03:before {
+	content:'\E043';
+}
+.icon-ico-tovar-features-04:before {
+	content:'\E044';
+}
+.icon-logo-horizontal:before {
+	content:'\E045';
+}
+.icon-logo-vertical:before {
+	content:'\E046';
+}

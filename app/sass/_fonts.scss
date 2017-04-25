@@ -1,0 +1,33 @@
+/*--------- font-face ---------*/
+@font-face {
+    font-family: 'Ubuntu-B';
+    src: url('fonts/Ubuntu-B.eot');
+    src: url('fonts/Ubuntu-B.eot') format('embedded-opentype'),
+         url('fonts/Ubuntu-B.woff') format('woff'),
+         url('fonts/Ubuntu-B.ttf') format('truetype'),
+         url('fonts/Ubuntu-B.svg#Ubuntu-B') format('svg');
+}
+@font-face {
+    font-family: 'Ubuntu-M';
+    src: url('fonts/Ubuntu-M.eot');
+    src: url('fonts/Ubuntu-M.eot') format('embedded-opentype'),
+         url('fonts/Ubuntu-M.woff') format('woff'),
+         url('fonts/Ubuntu-M.ttf') format('truetype'),
+         url('fonts/Ubuntu-M.svg#Ubuntu-M') format('svg');
+}
+@font-face {
+    font-family: 'Ubuntu-R';
+    src: url('fonts/Ubuntu-R.eot');
+    src: url('fonts/Ubuntu-R.eot') format('embedded-opentype'),
+         url('fonts/Ubuntu-R.woff') format('woff'),
+         url('fonts/Ubuntu-R.ttf') format('truetype'),
+         url('fonts/Ubuntu-R.svg#Ubuntu-R') format('svg');
+}
+@font-face {
+    font-family: 'Ubuntu-L';
+    src: url('fonts/Ubuntu-Lt.eot');
+    src: url('fonts/Ubuntu-L.eot') format('embedded-opentype'),
+         url('fonts/Ubuntu-L.woff') format('woff'),
+         url('fonts/Ubuntu-L.ttf') format('truetype'),
+         url('fonts/Ubuntu-L.svg#Ubuntu-L') format('svg');
+}

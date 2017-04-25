@@ -4,6 +4,8 @@ header.header.clearfix
       .logo
         a(href="#") 
           img(src="images/logo-vertical.svg", alt="")
+      a(href="#mmenu").mob-menu-button
+        span.icon-11-hamburger
       .header-navigation
         ul
           li
@@ -38,10 +40,11 @@ header.header.clearfix
               span.icon-03-vodafone
               | +38 
               span.fm (066) 777 78 42
+
   .header-bottom
     .container
       .row
-        .col.l3.12
+        .col.col--sect.l3.s12
           .navigation-catalog
             .dropdown-button.navigation-catalog__butt(data-activates='drop-catalog')
               | Каталог
@@ -115,9 +118,9 @@ header.header.clearfix
                             a(href="#") Подводное освещение
                       .col.l4
                         .catalog-banner
-                          a(href="#")
+                          a(href="#",style="background:url(assets/images/banner.jpg) 50% 50% no-repeat")
                             img(src="assets/images/banner.jpg", alt="")
-        .col.l6.s12
+        .col.col--sect.l6.s12
           .head-search
             form(action="#")
               input(type="search",placeholder="Поиск ")
@@ -158,7 +161,7 @@ header.header.clearfix
                 a(href="#")
                   | Все результаты
                   span.icon-16-arrow-link
-        .col.l3.s12
+        .col.col--sect.l3.s12
           .head-dropdown
             .dropdown-button.head-dropdown__butt(data-activates='drop-enter')
               span.icon-09-sign-in

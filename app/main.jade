@@ -21,380 +21,384 @@ html
     // PRELOADER
     //- include _preloader
     // PRELOADER
-    // wrapper start
-    .wrapper
-      // header SECTION
-      include _header
-      // header SECTION
-      //general - slider
-      section.general-slider
-        .container
-          .swiper-container
-            .swiper-wrapper
-              .swiper-slide
-                .swiper-caption( data-swiper-parallax="-200")
-                  .slider-brand
-                    img(src="assets/images/br.png", alt="")
-                  .slider-tlt Бойлер Bosch Tronic 1000 T ES 030-5-859
-                  .slider-txt Лучшее для вас и вашей семьи! 
-                  a(href="#").btn.btn-dark
-                    .btn-animate
-                    span Смотреть детали
-                img.swiper-img(src="assets/images/prod1.png", alt="", data-swiper-parallax="-400")
-              .swiper-slide
-                .swiper-caption( data-swiper-parallax="-200")
-                  .slider-brand
-                    img(src="assets/images/br.png", alt="")
-                  .slider-tlt Бойлер asd asd asBosch Tronic 1000 T ES 030-5-859
-                  .slider-txt Лучшее для вас и вашей семьи! 
-                  a(href="#").btn.btn-dark
-                    .btn-animate
-                    span Смотреть детали
-                img.swiper-img(src="assets/images/prod1.png", alt="", data-swiper-parallax="-400")
-              .swiper-slide
-                .swiper-caption( data-swiper-parallax="-200")
-                  .slider-brand
-                    img(src="assets/images/br.png", alt="")
-                  .slider-tlt Бойлер Bosch Tronic 1000 T ES 030-5-859
-                  .slider-txt Лучшее для вас и вашей семьи! 
-                  a(href="#").btn.btn-dark
-                    .btn-animate
-                    span Смотреть детали
-                img.swiper-img(src="assets/images/prod1.png", alt="", data-swiper-parallax="-400")
-            .swiper-controls
+    //mobile menu
+    include _mobile__nav
+    .page-wrap
+      // wrapper start
+      .wrapper
+        // header SECTION
+        include _header
+
+        // header SECTION
+        //general - slider
+        section.general-slider
+          .container
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  .swiper-caption( data-swiper-parallax="-200")
+                    .slider-brand
+                      img(src="assets/images/br.png", alt="")
+                    .slider-tlt Бойлер Bosch Tronic 1000 T ES 030-5-859
+                    .slider-txt Лучшее для вас и вашей семьи!
+                    a(href="#").btn.btn-dark
+                      .btn-animate
+                      span Смотреть детали
+                  img.swiper-img(src="assets/images/prod1.png", alt="", data-swiper-parallax="-400")
+                .swiper-slide
+                  .swiper-caption( data-swiper-parallax="-200")
+                    .slider-brand
+                      img(src="assets/images/br.png", alt="")
+                    .slider-tlt Бойлер asd asd asBosch Tronic 1000 T ES 030-5-859
+                    .slider-txt Лучшее для вас и вашей семьи!
+                    a(href="#").btn.btn-dark
+                      .btn-animate
+                      span Смотреть детали
+                  img.swiper-img(src="assets/images/prod1.png", alt="", data-swiper-parallax="-400")
+                .swiper-slide
+                  .swiper-caption( data-swiper-parallax="-200")
+                    .slider-brand
+                      img(src="assets/images/br.png", alt="")
+                    .slider-tlt Бойлер Bosch Tronic 1000 T ES 030-5-859
+                    .slider-txt Лучшее для вас и вашей семьи!
+                    a(href="#").btn.btn-dark
+                      .btn-animate
+                      span Смотреть детали
+                  img.swiper-img(src="assets/images/prod1.png", alt="", data-swiper-parallax="-400")
+              .swiper-controls
+                .swiper-button-prev
+                  span.icon-15-arrow-left-karusel
+                .swiper-button-next
+                  span.icon-14-arrow-right-karusel
+                .swiper-pagination
+        //general - slider
+        //section product
+        section.product-section
+          .container
+            .heading-section.clearfix
+              | Популярное
+              a.view-all(href="#")
+                | Смотреть все популярные товары
+                span.icon-16-arrow-link
+            .product-slider-cont
+              .product-slider
+                .swiper-container
+                  .swiper-wrapper
+                    mixin product-slide(img,name)
+                      .swiper-slide
+                        .product-slider-item
+                          a(href="#")
+                            .product-slider-item__img
+                              img(src="assets/images/#{img}.jpg", alt="")
+                              .product-status
+                                img(src="images/stat1.png", alt="")
+                            .product-slider-item__name= name
+                          .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
+                          .product-slider-item__bottom.clearfix
+                            .product-price
+                              span.old 4 019
+                                sub грн
+                              span.new 3 519
+                                sub грн
+                            a(href="#").btn
+                              .btn-animate
+                              span Купить
+                    +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
+                    +product-slide('prod3','Водопад для бассейна "Дельфин")')
               .swiper-button-prev
                 span.icon-15-arrow-left-karusel
               .swiper-button-next
                 span.icon-14-arrow-right-karusel
               .swiper-pagination
-      //general - slider
-      //section product
-      section.product-section
-        .container
-          .heading-section.clearfix
-            | Популярное
-            a.view-all(href="#")
-              | Смотреть все популярные товары
-              span.icon-16-arrow-link
-          .product-slider-cont
-            .product-slider
-              .swiper-container
-                .swiper-wrapper
-                  mixin product-slide(img,name)
-                    .swiper-slide
-                      .product-slider-item
-                        a(href="#")
-                          .product-slider-item__img
-                            img(src="assets/images/#{img}.jpg", alt="")
-                            .product-status 
-                              img(src="images/stat1.png", alt="")
-                          .product-slider-item__name= name 
-                        .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
-                        .product-slider-item__bottom.clearfix
-                          .product-price
-                            span.old 4 019 
-                              sub грн
-                            span.new 3 519
-                              sub грн
-                          a(href="#").btn
-                            .btn-animate
-                            span Купить
-                  +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                  +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                  +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                  +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                  +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
-                  +product-slide('prod3','Водопад для бассейна "Дельфин")')
-            .swiper-button-prev
-              span.icon-15-arrow-left-karusel
-            .swiper-button-next
-              span.icon-14-arrow-right-karusel
-            .swiper-pagination
-      //section product
-      section.product-section.product-section--2
-        .container
-          .heading-section.clearfix
-            | Акции
-            a.view-all(href="#")
-              | Смотреть все акционные товары
-              span.icon-16-arrow-link
-          .product-slider-cont
-            .product-slider
-              .swiper-container
-                .swiper-wrapper
-                  mixin product-slide(img,name)
-                    .swiper-slide
-                      .product-slider-item
-                        a(href="#")
-                          .product-slider-item__img
-                            img(src="assets/images/#{img}.jpg", alt="")
-                            .product-status 
-                              img(src="images/stat2.png", alt="")
-                          .product-slider-item__name= name 
-                        .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
-                        .product-slider-item__bottom.clearfix
-                          .product-price
-                            span.old 4 019 
-                              sub грн
-                            span.new 3 519
-                              sub грн
-                          a(href="#").btn
-                            .btn-animate
-                            span Купить
-                  +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                  +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                  +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
-                  +product-slide('prod3','Водопад для бассейна "Дельфин")')
-            .swiper-button-prev
-              span.icon-15-arrow-left-karusel
-            .swiper-button-next
-              span.icon-14-arrow-right-karusel
-            .swiper-pagination
-      //section product
-      section.product-section
-        .container
-          .heading-section.clearfix
-            | Waterstore рекомендует
-          .product-slider-tabs
-            .product-tab__navs
-              ul.tabs
-                li.tab
-                  a.active(href='#tab1') Оборудование для бассейнов
-                li.tab
-                  a(href='#tab2')  Отопление и ГВС 
-                li.tab
-                  a(href='#tab3')  Вентиляция и кондиционирование 
-                li.tab
-                  a(href='#tab4')  Канализация
-            #tab1.tab-pane
-              .heading-section.clearfix
-                a.view-all(href="#")
-                  | Смотреть все товары данной категории
-                  span.icon-16-arrow-link
-              mixin product-slide-tab(img,name)
-                .swiper-slide
-                  .product-slider-item
-                    a(href="#")
-                      .product-slider-item__img
-                        img(src="assets/images/#{img}.jpg", alt="")
-                      .product-slider-item__name= name 
-                    .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
-                    .product-slider-item__bottom.clearfix
-                      .product-price
-                        span.old 4 019 
-                          sub грн
-                        span.new 3 519
-                          sub грн
-                      a(href="#").btn
-                        .btn-animate
-                        span Купить
-              .product-slider-cont
-                .product-slider
-                  .swiper-container
-                    .swiper-wrapper
-                      +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
-                      +product-slide('prod3','Водопад для бассейна "Дельфин")')
-                .swiper-button-prev
-                  span.icon-15-arrow-left-karusel
-                .swiper-button-next
-                  span.icon-14-arrow-right-karusel
-                .swiper-pagination
-            #tab2.tab-pane
-              .heading-section.clearfix
-                a.view-all(href="#")
-                  | Смотреть все товары данной категории
-                  span.icon-16-arrow-link
-              .product-slider-cont
-                .product-slider
-                  .swiper-container
-                    .swiper-wrapper
-                      +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                .swiper-button-prev
-                  span.icon-15-arrow-left-karusel
-                .swiper-button-next
-                  span.icon-14-arrow-right-karusel
-                .swiper-pagination
-            #tab3.tab-pane
-              .heading-section.clearfix
-                a.view-all(href="#")
-                  | Смотреть все товары данной категории
-                  span.icon-16-arrow-link
-              .product-slider-cont
-                .product-slider
-                  .swiper-container
-                    .swiper-wrapper
-                      +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
-                      +product-slide('prod3','Водопад для бассейна "Дельфин")')
-                .swiper-button-prev
-                  span.icon-15-arrow-left-karusel
-                .swiper-button-next
-                  span.icon-14-arrow-right-karusel
-                .swiper-pagination
-            #tab4.tab-pane
-              .heading-section.clearfix
-                a.view-all(href="#")
-                  | Смотреть все товары данной категории
-                  span.icon-16-arrow-link
-              .product-slider-cont
-                .product-slider
-                  .swiper-container
-                    .swiper-wrapper
-                      +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod3','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod4','Насос для гидромассажа и домашних SPA Emaux ST033')
-                      +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                .swiper-button-prev
-                  span.icon-15-arrow-left-karusel
-                .swiper-button-next
-                  span.icon-14-arrow-right-karusel
-                .swiper-pagination
-      //section why-we
-      section.why-we
-        .container
-          .heading-section.align-center Почему мы?
-          .row
-            .col.l3.m6.s12
-              a(href="#").why-we-item
-                table
-                  tr
-                    td 
-                      img(src="images/ico-features-01.svg", alt="")
-                    td Доставка по всей Украине
-            .col.l3.m6.s12
-              a(href="#").why-we-item
-                table
-                  tr
-                    td 
-                      img(src="images/ico-features-02.svg", alt="")
-                    td 100% качественный товар
-            .col.l3.m6.s12
-              a(href="#").why-we-item
-                table
-                  tr
-                    td 
-                      img(src="images/ico-features-03.svg", alt="")
-                    td Оплата при получении
-            .col.l3.m6.s12
-              a(href="#").why-we-item
-                table
-                  tr
-                    td 
-                      img(src="images/ico-features-04.svg", alt="")
-                    td Гарантийное и послегарантийное обслуживание
-          .row.brand-cont
-            .col.l2
-              a(href="#").brand-item
-                img(src="assets/images/brand1.png", alt="")
-            .col.l2
-              a(href="#").brand-item
-                img(src="assets/images/brand1.png", alt="")
-            .col.l2
-              a(href="#").brand-item
-                img(src="assets/images/brand1.png", alt="")
-            .col.l2
-              a(href="#").brand-item
-                img(src="assets/images/brand1.png", alt="")
-            .col.l2
-              a(href="#").brand-item
-                img(src="assets/images/brand1.png", alt="")
-            .col.l2
-              a(href="#").brand-item
-                img(src="assets/images/brand1.png", alt="")
-      //section blog-section
-      section.blog-section
-        .container
-          .heading-section Статьи
-            a.view-all(href="#")
-              | Смотреть все статьи
-              span.icon-16-arrow-link
-          .row
-            .col.l4.s12
-              a(href="#").blog-item
-                .blog-item__img
-                  img(src="assets/images/blog1.jpg", alt="")
-                .blog-item__date 02.03.2017
-                .blog-item__name Роботы пылесосы для вашего бассейна
-                .blog-item__txt Как известно, различные дезинфицирующие установки и химия для бассейнов помогут сохранить чистоту воды в нем, но не самой чаши.  А чистку бассейна необходимо производить регулярно. 
-                span.view-all
-                  | Читать дальше
-                  span.icon-16-arrow-link
-            .col.l4.s12
-              a(href="#").blog-item
-                .blog-item__img
-                  img(src="assets/images/blog2.jpg", alt="")
-                .blog-item__date 02.03.2017
-                .blog-item__name Бетонная чаша бассейна: строим на долгие-долгие годы!
-                .blog-item__txt Каждый бассейн   это индивидуальное гидротехническое сооружение, которое необходимо рассчитывать для каждого владельца персонально. В данной статье мы расскажем как правильно по этапам осуществить строительство бетонной чаши бассейна.
-                span.view-all
-                  | Читать дальше
-                  span.icon-16-arrow-link
-            .col.l4.s12
-              a(href="#").blog-item
-                .blog-item__img
-                  img(src="assets/images/blog3.jpg", alt="")
-                .blog-item__date 02.03.2017
-                .blog-item__name Как экономно отапливать свой дом
-                .blog-item__txt Мы продолжаем цикл статей об энергоэффективности и рассмотрим плюсы и минусы самых популярных и доступных источников энергии для отопления частного дома. 
-                span.view-all
-                  | Читать дальше
-                  span.icon-16-arrow-link
-      //section video-section
-      section.video-section
-        .container
-          .heading-section Обзоры
-            a.view-all(href="#")
-              | Смотреть все обзоры
-              span.icon-16-arrow-link
-          .video-section-container
+        //section product
+        section.product-section.product-section--2
+          .container
+            .heading-section.clearfix
+              | Акции
+              a.view-all(href="#")
+                | Смотреть все акционные товары
+                span.icon-16-arrow-link
+            .product-slider-cont
+              .product-slider
+                .swiper-container
+                  .swiper-wrapper
+                    mixin product-slide(img,name)
+                      .swiper-slide
+                        .product-slider-item
+                          a(href="#")
+                            .product-slider-item__img
+                              img(src="assets/images/#{img}.jpg", alt="")
+                              .product-status
+                                img(src="images/stat2.png", alt="")
+                            .product-slider-item__name= name
+                          .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
+                          .product-slider-item__bottom.clearfix
+                            .product-price
+                              span.old 4 019
+                                sub грн
+                              span.new 3 519
+                                sub грн
+                            a(href="#").btn
+                              .btn-animate
+                              span Купить
+                    +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
+                    +product-slide('prod3','Водопад для бассейна "Дельфин")')
+              .swiper-button-prev
+                span.icon-15-arrow-left-karusel
+              .swiper-button-next
+                span.icon-14-arrow-right-karusel
+              .swiper-pagination
+        //section product
+        section.product-section
+          .container
+            .heading-section.clearfix
+              | Waterstore рекомендует
+            .product-slider-tabs
+              .product-tab__navs
+                ul.tabs
+                  li.tab
+                    a.active(href='#tab1') Оборудование для бассейнов
+                  li.tab
+                    a(href='#tab2')  Отопление и ГВС
+                  li.tab
+                    a(href='#tab3')  Вентиляция и кондиционирование
+                  li.tab
+                    a(href='#tab4')  Канализация
+              #tab1.tab-pane
+                .heading-section.clearfix
+                  a.view-all(href="#")
+                    | Смотреть все товары данной категории
+                    span.icon-16-arrow-link
+                mixin product-slide-tab(img,name)
+                  .swiper-slide
+                    .product-slider-item
+                      a(href="#")
+                        .product-slider-item__img
+                          img(src="assets/images/#{img}.jpg", alt="")
+                        .product-slider-item__name= name
+                      .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
+                      .product-slider-item__bottom.clearfix
+                        .product-price
+                          span.old 4 019
+                            sub грн
+                          span.new 3 519
+                            sub грн
+                        a(href="#").btn
+                          .btn-animate
+                          span Купить
+                .product-slider-cont
+                  .product-slider
+                    .swiper-container
+                      .swiper-wrapper
+                        +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
+                        +product-slide('prod3','Водопад для бассейна "Дельфин")')
+                  .swiper-button-prev
+                    span.icon-15-arrow-left-karusel
+                  .swiper-button-next
+                    span.icon-14-arrow-right-karusel
+                  .swiper-pagination
+              #tab2.tab-pane
+                .heading-section.clearfix
+                  a.view-all(href="#")
+                    | Смотреть все товары данной категории
+                    span.icon-16-arrow-link
+                .product-slider-cont
+                  .product-slider
+                    .swiper-container
+                      .swiper-wrapper
+                        +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                  .swiper-button-prev
+                    span.icon-15-arrow-left-karusel
+                  .swiper-button-next
+                    span.icon-14-arrow-right-karusel
+                  .swiper-pagination
+              #tab3.tab-pane
+                .heading-section.clearfix
+                  a.view-all(href="#")
+                    | Смотреть все товары данной категории
+                    span.icon-16-arrow-link
+                .product-slider-cont
+                  .product-slider
+                    .swiper-container
+                      .swiper-wrapper
+                        +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
+                        +product-slide('prod3','Водопад для бассейна "Дельфин")')
+                  .swiper-button-prev
+                    span.icon-15-arrow-left-karusel
+                  .swiper-button-next
+                    span.icon-14-arrow-right-karusel
+                  .swiper-pagination
+              #tab4.tab-pane
+                .heading-section.clearfix
+                  a.view-all(href="#")
+                    | Смотреть все товары данной категории
+                    span.icon-16-arrow-link
+                .product-slider-cont
+                  .product-slider
+                    .swiper-container
+                      .swiper-wrapper
+                        +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod3','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod4','Насос для гидромассажа и домашних SPA Emaux ST033')
+                        +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                  .swiper-button-prev
+                    span.icon-15-arrow-left-karusel
+                  .swiper-button-next
+                    span.icon-14-arrow-right-karusel
+                  .swiper-pagination
+        //section why-we
+        section.why-we
+          .container
+            .heading-section.align-center Почему мы?
             .row
               .col.l3.m6.s12
-                a(href="#").video-section-item
-                  .video-section-item__img
-                    img(src="assets/images/vid1.jpg", alt="")
-                  .video-section-item__name Газовый котел Vaillant turboTEC plus
-                  span.view-all
-                    | Смотреть обзор
-                    span.icon-16-arrow-link
+                a(href="#").why-we-item
+                  table
+                    tr
+                      td
+                        img(src="images/ico-features-01.svg", alt="")
+                      td Доставка по всей Украине
               .col.l3.m6.s12
-                a(href="#").video-section-item
-                  .video-section-item__img
-                    img(src="assets/images/vid2.jpg", alt="")
-                  .video-section-item__name Тепловые насосы Vaillan aroTHERM
-                  span.view-all
-                    | Смотреть обзор
-                    span.icon-16-arrow-link
+                a(href="#").why-we-item
+                  table
+                    tr
+                      td
+                        img(src="images/ico-features-02.svg", alt="")
+                      td 100% качественный товар
               .col.l3.m6.s12
-                a(href="#").video-section-item
-                  .video-section-item__img
-                    img(src="assets/images/vid3.jpg", alt="")
-                  .video-section-item__name Видеообзор конденсационного котла Viessmann Vitodens 200-W
-                  span.view-all
-                    | Смотреть обзор
-                    span.icon-16-arrow-link
+                a(href="#").why-we-item
+                  table
+                    tr
+                      td
+                        img(src="images/ico-features-03.svg", alt="")
+                      td Оплата при получении
               .col.l3.m6.s12
-                a(href="#").video-section-item
-                  .video-section-item__img
-                    img(src="assets/images/vid4.jpg", alt="")
-                  .video-section-item__name Пример работы незакипаемой гелиосистемы
+                a(href="#").why-we-item
+                  table
+                    tr
+                      td
+                        img(src="images/ico-features-04.svg", alt="")
+                      td Гарантийное и послегарантийное обслуживание
+            .row.brand-cont
+              .col.l2.m4.s6
+                a(href="#").brand-item
+                  img(src="assets/images/brand1.png", alt="")
+              .col.l2.m4.s6
+                a(href="#").brand-item
+                  img(src="assets/images/brand1.png", alt="")
+              .col.l2.m4.s6
+                a(href="#").brand-item
+                  img(src="assets/images/brand1.png", alt="")
+              .col.l2.m4.s6
+                a(href="#").brand-item
+                  img(src="assets/images/brand1.png", alt="")
+              .col.l2.m4.s6
+                a(href="#").brand-item
+                  img(src="assets/images/brand1.png", alt="")
+              .col.l2.m4.s6
+                a(href="#").brand-item
+                  img(src="assets/images/brand1.png", alt="")
+        //section blog-section
+        section.blog-section
+          .container
+            .heading-section Статьи
+              a.view-all(href="#")
+                | Смотреть все статьи
+                span.icon-16-arrow-link
+            .row
+              .col.l4.s12
+                a(href="#").blog-item
+                  span.blog-item__img
+                    img(src="assets/images/blog1.jpg", alt="")
+                  span.blog-item__date 02.03.2017
+                  span.blog-item__name Роботы пылесосы для вашего бассейна
+                  span.blog-item__txt Как известно, различные дезинфицирующие установки и химия для бассейнов помогут сохранить чистоту воды в нем, но не самой чаши.  А чистку бассейна необходимо производить регулярно.
                   span.view-all
-                    | Смотреть обзор
+                    | Читать дальше
                     span.icon-16-arrow-link
-      //section seo-section
-      section.seo-section
-        .container
-          p Купить оборудование для бассейнов и аквапарков, купить котел, заказать проект аквапарка, заказать концепцию аквапарка. Вотерпарк (Waterpark) это компания, основным направлением которой является строительство аквапарков, создание проектов аквапарков. Проектирование аквапарков является нашей главной деятельностью, но кроме того мы работаем на таком поле как поставки оборудования для аквапарков, оборудование для бассейнов, отопительное оборудование, отопление дома, системы отопления.
-          span.h2  Строительство аквапарков
-          p Если вас интересует строительство аквапарков – обязательно обращайтесь инженерам и консультантам компании Вотерпарк. Мы создадим для Вас проект аквапарка, проведем все экономические исследования, закупим оборудование для аквапарков и бассейнов, выполним все строительные работы и обязательно проведем полный контроль качества.
-          p Почему строительство аквапарка стоит доверять именно компании Waterpark? Мы строим аквапарки в Украине, России, Казахстане, Молдове и других странах более 15 лет! Компания Waterpark учувствовала в реализации 12 аквапарков, а также поставила оборудование для бассейнов, оборудование для аквапарков, отопительное оборудование. Дизайнеры и инженеры компании Waterpark создали более 30 проектов аквапарков в том числе проекты летних аквапарков, закрытых аквапарков. Все объекты, где компания Waterpark выполнила строительство аквапарков, поставки отопительного оборудования, оборудования для бассейнов.
-          p Строительство аквапарков становится все более перспективным, так как все больше людей хотят ощутить себя на море либо повеселиться на водных горках 365 дней в году, даже в условиях суровой зимы Украины, России, Казахстана и др.
-      .above-footer
-    include _footer
+              .col.l4.s12
+                a(href="#").blog-item
+                  span.blog-item__img
+                    img(src="assets/images/blog2.jpg", alt="")
+                  span.blog-item__date 02.03.2017
+                  span.blog-item__name Бетонная чаша бассейна: строим на долгие-долгие годы!
+                  span.blog-item__txt Каждый бассейн   это индивидуальное гидротехническое сооружение, которое необходимо рассчитывать для каждого владельца персонально. В данной статье мы расскажем как правильно по этапам осуществить строительство бетонной чаши бассейна.
+                  span.view-all
+                    | Читать дальше
+                    span.icon-16-arrow-link
+              .col.l4.s12
+                a(href="#").blog-item
+                  span.blog-item__img
+                    img(src="assets/images/blog3.jpg", alt="")
+                  span.blog-item__date 02.03.2017
+                  span.blog-item__name Как экономно отапливать свой дом
+                  span.blog-item__txt Мы продолжаем цикл статей об энергоэффективности и рассмотрим плюсы и минусы самых популярных и доступных источников энергии для отопления частного дома.
+                  span.view-all
+                    | Читать дальше
+                    span.icon-16-arrow-link
+        //section video-section
+        section.video-section
+          .container
+            .heading-section Обзоры
+              a.view-all(href="#")
+                | Смотреть все обзоры
+                span.icon-16-arrow-link
+            .video-section-container
+              .row
+                .col.l3.m6.s12
+                  a(href="#").video-section-item
+                    span.video-section-item__img
+                      img(src="assets/images/vid1.jpg", alt="")
+                    span.video-section-item__name Газовый котел Vaillant turboTEC plus
+                    span.view-all
+                      | Смотреть обзор
+                      span.icon-16-arrow-link
+                .col.l3.m6.s12
+                  a(href="#").video-section-item
+                    span.video-section-item__img
+                      img(src="assets/images/vid2.jpg", alt="")
+                    span.video-section-item__name Тепловые насосы Vaillan aroTHERM
+                    span.view-all
+                      | Смотреть обзор
+                      span.icon-16-arrow-link
+                .col.l3.m6.s12
+                  a(href="#").video-section-item
+                    span.video-section-item__img
+                      img(src="assets/images/vid3.jpg", alt="")
+                    span.video-section-item__name Видеообзор конденсационного котла Viessmann Vitodens 200-W
+                    span.view-all
+                      | Смотреть обзор
+                      span.icon-16-arrow-link
+                .col.l3.m6.s12
+                  a(href="#").video-section-item
+                    span.video-section-item__img
+                      img(src="assets/images/vid4.jpg", alt="")
+                    span.video-section-item__name Пример работы незакипаемой гелиосистемы
+                    span.view-all
+                      | Смотреть обзор
+                      span.icon-16-arrow-link
+        //section seo-section
+        section.seo-section
+          .container
+            p Купить оборудование для бассейнов и аквапарков, купить котел, заказать проект аквапарка, заказать концепцию аквапарка. Вотерпарк (Waterpark) это компания, основным направлением которой является строительство аквапарков, создание проектов аквапарков. Проектирование аквапарков является нашей главной деятельностью, но кроме того мы работаем на таком поле как поставки оборудования для аквапарков, оборудование для бассейнов, отопительное оборудование, отопление дома, системы отопления.
+            h5  Строительство аквапарков
+            p Если вас интересует строительство аквапарков – обязательно обращайтесь инженерам и консультантам компании Вотерпарк. Мы создадим для Вас проект аквапарка, проведем все экономические исследования, закупим оборудование для аквапарков и бассейнов, выполним все строительные работы и обязательно проведем полный контроль качества.
+            p Почему строительство аквапарка стоит доверять именно компании Waterpark? Мы строим аквапарки в Украине, России, Казахстане, Молдове и других странах более 15 лет! Компания Waterpark учувствовала в реализации 12 аквапарков, а также поставила оборудование для бассейнов, оборудование для аквапарков, отопительное оборудование. Дизайнеры и инженеры компании Waterpark создали более 30 проектов аквапарков в том числе проекты летних аквапарков, закрытых аквапарков. Все объекты, где компания Waterpark выполнила строительство аквапарков, поставки отопительного оборудования, оборудования для бассейнов.
+            p Строительство аквапарков становится все более перспективным, так как все больше людей хотят ощутить себя на море либо повеселиться на водных горках 365 дней в году, даже в условиях суровой зимы Украины, России, Казахстана и др.
+      //footer
+      include _footer

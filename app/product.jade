@@ -1,0 +1,127 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      div
+        strong Для полной функциональности этого сайта необходимо включить JavaScript. Вот 
+        a(href="https://artjoker.ua/ru/blog/how-to-enable-javascript/" target="_blank") инструкции,
+        | как включить JavaScript в вашем браузере. 
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    //include _preloader
+    // PRELOADER
+    //mobile menu
+    include _mobile__nav
+    .page-wrap
+      // wrapper start
+      .wrapper
+        // header SECTION
+        include _header
+
+        // header SECTION
+        //breadcrumbs
+        section.breadcrumbs
+          .container
+            ul
+              li
+                a(href="#") Главная
+              li
+                a(href="#") Отопительные котлы
+              li
+                a(href="#") Конденсационные двухконтурные настенные котлы
+              li
+                span Buderus Logamax Plus GB172i – 20K
+
+        //product-container
+        section.product-container
+            .container
+                .row
+                    .col.l6.m12
+                        .product-slider
+                    .col.l4.m12
+                        .product-name Buderus Logamax Plus GB172i – 20K газовый двухконтурный конденсационный настенный котел
+                        .product-price
+                            span.new 3 519
+                                sub грн
+                        .product-order-button
+                            .quantity-wrap
+                                span.minus-icon
+                                    | &#8722;
+                                input.quantity(type='text', value='1',data-price-product="14000")
+                                span.plus-icon
+                                    | +
+                            .to-cart
+                                a(href="#").btn
+                                    .btn-animate
+                                    span.icon-37-buy-tovar
+                                    span В корзину
+                            a(href="#").buy-one-click.btn.btn-green
+                                span.icon-38-one-click-button
+                                | Купить в 1 клик
+                        .product-char
+                            table
+                                tr
+                                    td Мощность
+                                    td 21,3 кВт
+                                tr
+                                    td Размеры
+                                    td 840х440х350 мм
+                                tr
+                                    td Диаметр дымохода
+                                    td 60/100, 80/125, 80/80 мм
+                                tr
+                                    td Макс раб. давление
+                                    td 3 бар
+
+                    .col.l2.m12
+                        .product-inf
+                            table
+                                tr
+                                    td Код товара:
+                                    td АБ455-47-88
+                                tr
+                                    td Наличие:
+                                    td
+                                        span.icon-31-paid
+                                        | есть в наличии
+                                tr
+                                    td Бренд:
+                                    td
+                                        a(href="#") Buderus
+                        .product-inf-list
+                            ul
+                                li
+                                    img(src="images/ico-features-01.svg",alt="")
+                                    span Доставка по всей Украине
+                                li
+                                    img(src="images/ico-features-02.svg",alt="")
+                                    span 100% качественный товар
+                                li
+                                    img(src="images/ico-features-03.svg",alt="")
+                                    span Оплата при получении
+                                li
+                                    img(src="images/ico-features-04.svg",alt="")
+                                    span Гарантийное и послегарантийное обслуживание
+                        .product-social
+                            img(src="assets/images/product-social.jpg",alt="")
+        //section seo-section
+        section.seo-section
+          .container
+            p Купить оборудование для бассейнов и аквапарков, купить котел, заказать проект аквапарка, заказать концепцию аквапарка. Вотерпарк (Waterpark) это компания, основным направлением которой является строительство аквапарков, создание проектов аквапарков. Проектирование аквапарков является нашей главной деятельностью, но кроме того мы работаем на таком поле как поставки оборудования для аквапарков, оборудование для бассейнов, отопительное оборудование, отопление дома, системы отопления.
+            h5  Строительство аквапарков
+            p Если вас интересует строительство аквапарков – обязательно обращайтесь инженерам и консультантам компании Вотерпарк. Мы создадим для Вас проект аквапарка, проведем все экономические исследования, закупим оборудование для аквапарков и бассейнов, выполним все строительные работы и обязательно проведем полный контроль качества.
+            p Почему строительство аквапарка стоит доверять именно компании Waterpark? Мы строим аквапарки в Украине, России, Казахстане, Молдове и других странах более 15 лет! Компания Waterpark учувствовала в реализации 12 аквапарков, а также поставила оборудование для бассейнов, оборудование для аквапарков, отопительное оборудование. Дизайнеры и инженеры компании Waterpark создали более 30 проектов аквапарков в том числе проекты летних аквапарков, закрытых аквапарков. Все объекты, где компания Waterpark выполнила строительство аквапарков, поставки отопительного оборудования, оборудования для бассейнов.
+            p Строительство аквапарков становится все более перспективным, так как все больше людей хотят ощутить себя на море либо повеселиться на водных горках 365 дней в году, даже в условиях суровой зимы Украины, России, Казахстана и др.
+      //footer
+      include _footer

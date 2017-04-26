@@ -1,0 +1,193 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      div
+        strong Для полной функциональности этого сайта необходимо включить JavaScript. Вот 
+        a(href="https://artjoker.ua/ru/blog/how-to-enable-javascript/" target="_blank") инструкции,
+        | как включить JavaScript в вашем браузере. 
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    //include _preloader
+    // PRELOADER
+    //mobile menu
+    include _mobile__nav
+    .page-wrap
+      // wrapper start
+      .wrapper
+        // header SECTION
+        include _header
+
+        // header SECTION
+        //breadcrumbs
+        section.breadcrumbs
+          .container
+            ul
+              li
+                a(href="#") Главная
+              li
+                span Отопительные котлы
+            .head-page Отопительные котлы
+        //filter-section
+        section.filter-section.clearfix
+          .container
+            .filter-section-top.clearfix
+              .flt-sect-left
+                | Выберите тип котла
+                span.icon-18-arrow-categories
+              ul
+                li(data-category="cat1")
+                  span.icon-cat
+                    img(src="images/ico-boiler-type-01.svg", alt="")
+                  | Газовый
+                li(data-category="cat2")
+                  span.icon-cat
+                    img(src="images/ico-boiler-type-02.svg", alt="")
+                  | Твердотопливный
+                li(data-category="cat3")
+                  span.icon-cat
+                    img(src="images/ico-boiler-type-03.svg", alt="")
+                  | Электрический
+              .flt-sect-right
+                a(href="#")
+                  span.icon-cat
+                    img(src="images/ico-calc.svg", alt="")
+                  | Расчет мощности котла
+
+            .filter-section-body.clearfix
+                .filter-category.active(data-category="cat1")
+                    .filter-col.height_
+                        .filter-col__head Тип газового котла
+                        .filter-check
+                            input.filled-in(type="checkbox",id="check1")
+                            label(for="check1")
+                                .check-cont
+                                    .check-img
+                                        img(src="images/ico-boiler-characteristics-01.svg",alt="")
+                                    .check-txt
+                                        | Дымоходный(атмосферный)
+                                    span.tooltipped.icon-19-info(data-position="bottom",data-delay="50",data-tooltip="Газовые котлы двухконтурные (предназначены для отопления и нагрева воды ГВС) с битермическими либо раздельными теплообменниками")
+                        .filter-check
+                            input.filled-in(type="checkbox",id="check2")
+                            label(for="check2")
+                                .check-cont
+                                    .check-img
+                                        img(src="images/ico-boiler-characteristics-02.svg",alt="")
+                                    .check-txt
+                                        | Турбированный
+                                    span.tooltipped.icon-19-info(data-position="bottom",data-delay="50",data-tooltip="Flasdfkls kfl;s")
+                        .filter-check
+                            input.filled-in(type="checkbox",id="check3")
+                            label(for="check3")
+                                .check-cont
+                                    .check-img
+                                        img(src="images/ico-boiler-characteristics-03.svg",alt="")
+                                    .check-txt
+                                        | Конденсационный
+                                    span.tooltipped.icon-19-info(data-position="bottom",data-tooltip="Flasdfkls kfl;s")
+                    .filter-col.height_
+                        .filter-col__head Потребность и ГВС
+                        .filter-check
+                            input.filled-in(type="checkbox",id="check4")
+                            label(for="check4")
+                                .check-cont
+                                    .check-img
+                                        img(src="images/ico-boiler-characteristics-04.svg",alt="")
+                                    .check-txt
+                                        | Только обогрев
+                                    span.tooltipped.icon-19-info(data-position="bottom",data-tooltip="Газовые котлы двухконтурные (предназначены для отопления и нагрева воды ГВС) с битермическими либо раздельными теплообменниками")
+                        .filter-check
+                            input.filled-in(type="checkbox",id="check5")
+                            label(for="check5")
+                                .check-cont
+                                    .check-img
+                                        img(src="images/ico-boiler-characteristics-05.svg",alt="")
+                                    .check-txt
+                                        | Обогрев и горячее водоснабжение
+                                    span.tooltipped.icon-19-info(data-position="bottom",data-tooltip="Flasdfkls kfl;s")
+                    .filter-col.height_
+                        .filter-col__head Мощность
+                        .horse-block
+                            span от
+                            input(type="text",value="12")
+                            span до
+                            input(type="text",value="15")
+                            span
+                                b кВт
+                            .clearfix
+                                span или
+                                    b   площадь
+                                input(type="text",value="15")
+                                span м
+                                    sup 2
+                    .filter-col.height_
+                        .filter-col__head Цена
+                        .range-slider
+                            #range1(data-min='1', data-max='100000', data-slider-min='', data-slider-max='')
+                            .price-slider-input
+                                span от
+                                input(type="text").js_from
+                                span до
+                                input(type="text").js_to
+                                span
+                                    b грн
+                .filter-category(data-category="cat2")
+                    .align-center category 2
+                .filter-category(data-category="cat3")
+                    .align-center category 3
+                .filter-bottom.clearfix
+                    .filter-button
+                        a(href="#").btn.btn-green
+                            span.icon-20-apply-filters
+                            | Применить
+                        a(href="#").btn.btn-default
+                            span.icon-21-clear-filters
+                            | Сбросить
+                    .filter-close
+                        span.js_filter_close
+                            | Свернуть
+                            span.icon-22-hide-filters
+        //catalog-container
+        section.catalog-container
+            .container
+                .row
+                    mixin catalog-item(img,title)
+                        .col.l3.m6.s12
+                            a(href="#").catalog-item
+                                span.catalog-item__img
+                                    img(src="assets/images/#{img}.jpg",alt="")
+                                span.catalog-item__name
+                                    span= title
+                    +catalog-item('cat1','Настенные двухконтурные котлы (турбированные)')
+                    +catalog-item('cat2','Настенные двухконткрные котлы (дымоходные)')
+                    +catalog-item('cat3','Конденсационные двухконтурные настенные котлы')
+                    +catalog-item('cat4','Настенные одноконтурные котлы (турбированные)')
+                    +catalog-item('cat5','Настенные двухконтурные котлы (турбированные)')
+                    +catalog-item('cat6','Конденсационные одноконтурные настенные котлы')
+                    +catalog-item('cat7','Напольные котлы')
+                    +catalog-item('cat8','Электрические котлы')
+                    +catalog-item('cat9','Твердотопливные и пиролизные котлы')
+                    +catalog-item('cat10','Термостаты / программаторы / контроллеры / терморегуляторы для котлов')
+                    +catalog-item('cat11','Аксессуары для котлов')
+                    +catalog-item('cat12','Коаксиальные дымоходы')
+          //section seo-section
+        section.seo-section
+          .container
+            p Купить оборудование для бассейнов и аквапарков, купить котел, заказать проект аквапарка, заказать концепцию аквапарка. Вотерпарк (Waterpark) это компания, основным направлением которой является строительство аквапарков, создание проектов аквапарков. Проектирование аквапарков является нашей главной деятельностью, но кроме того мы работаем на таком поле как поставки оборудования для аквапарков, оборудование для бассейнов, отопительное оборудование, отопление дома, системы отопления.
+            h5  Строительство аквапарков
+            p Если вас интересует строительство аквапарков – обязательно обращайтесь инженерам и консультантам компании Вотерпарк. Мы создадим для Вас проект аквапарка, проведем все экономические исследования, закупим оборудование для аквапарков и бассейнов, выполним все строительные работы и обязательно проведем полный контроль качества.
+            p Почему строительство аквапарка стоит доверять именно компании Waterpark? Мы строим аквапарки в Украине, России, Казахстане, Молдове и других странах более 15 лет! Компания Waterpark учувствовала в реализации 12 аквапарков, а также поставила оборудование для бассейнов, оборудование для аквапарков, отопительное оборудование. Дизайнеры и инженеры компании Waterpark создали более 30 проектов аквапарков в том числе проекты летних аквапарков, закрытых аквапарков. Все объекты, где компания Waterpark выполнила строительство аквапарков, поставки отопительного оборудования, оборудования для бассейнов.
+            p Строительство аквапарков становится все более перспективным, так как все больше людей хотят ощутить себя на море либо повеселиться на водных горках 365 дней в году, даже в условиях суровой зимы Украины, России, Казахстана и др.
+      //footer
+      include _footer

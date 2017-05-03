@@ -1,0 +1,131 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      div
+        strong Для полной функциональности этого сайта необходимо включить JavaScript. Вот 
+        a(href="https://artjoker.ua/ru/blog/how-to-enable-javascript/" target="_blank") инструкции,
+        | как включить JavaScript в вашем браузере. 
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    //mobile menu
+    include _mobile__nav
+    .page-wrap
+      // wrapper start
+      .wrapper
+        // header SECTION
+        include _header
+
+        // header SECTION
+        //breadcrumbs
+        section.breadcrumbs
+          .container
+            ul
+              li
+                a(href="#") Главная
+              li
+                span Статьи
+            .head-page Статьи
+        section.blog-section.blog--all
+            .container
+                .product-slider-tabs
+                    .product-tab__navs
+                        ul.tabs
+                            li.tab
+                                a.active(href='#tab1') Все
+                            li.tab
+                                a(href='#tab2')  Аквапарки и водные аттракционы
+                            li.tab
+                                a(href='#tab3')  Оборудование для бассейнов
+                            li.tab
+                                a(href='#tab4')  Отопление/ ГВС/водоснабжение
+                            li.tab
+                                a(href='#tab5')  Строительство бассейнов
+                #tab1.tab-pane.row
+                    .col.l4.s12
+                        a(href="#").blog-item
+                            span.blog-item__img
+                                img(src="assets/images/blog1.jpg", alt="")
+                            span.blog-item__date 02.03.2017
+                            span.blog-item__name Роботы пылесосы для вашего бассейна
+                            span.blog-item__txt Как известно, различные дезинфицирующие установки и химия для бассейнов помогут сохранить чистоту воды в нем, но не самой чаши.  А чистку бассейна необходимо производить регулярно.
+                            span.view-all
+                                | Читать дальше
+                                span.icon-16-arrow-link
+                    .col.l4.s12
+                        a(href="#").blog-item
+                            span.blog-item__img
+                                img(src="assets/images/blog2.jpg", alt="")
+                            span.blog-item__date 02.03.2017
+                            span.blog-item__name Бетонная чаша бассейна: строим на долгие-долгие годы!
+                            span.blog-item__txt Каждый бассейн   это индивидуальное гидротехническое сооружение, которое необходимо рассчитывать для каждого владельца персонально. В данной статье мы расскажем как правильно по этапам осуществить строительство бетонной чаши бассейна.
+                            span.view-all
+                                | Читать дальше
+                                span.icon-16-arrow-link
+                    .col.l4.s12
+                        a(href="#").blog-item
+                            span.blog-item__img
+                                img(src="assets/images/blog3.jpg", alt="")
+                            span.blog-item__date 02.03.2017
+                            span.blog-item__name Как экономно отапливать свой дом
+                            span.blog-item__txt Мы продолжаем цикл статей об энергоэффективности и рассмотрим плюсы и минусы самых популярных и доступных источников энергии для отопления частного дома.
+                            span.view-all
+                                | Читать дальше
+                                span.icon-16-arrow-link
+                    .col.l4.s12
+                        a(href="#").blog-item
+                            span.blog-item__img
+                                img(src="assets/images/blog1.jpg", alt="")
+                            span.blog-item__date 02.03.2017
+                            span.blog-item__name Роботы пылесосы для вашего бассейна
+                            span.blog-item__txt Как известно, различные дезинфицирующие установки и химия для бассейнов помогут сохранить чистоту воды в нем, но не самой чаши.  А чистку бассейна необходимо производить регулярно.
+                            span.view-all
+                                | Читать дальше
+                                span.icon-16-arrow-link
+                    .col.l4.s12
+                        a(href="#").blog-item
+                            span.blog-item__img
+                                img(src="assets/images/blog2.jpg", alt="")
+                            span.blog-item__date 02.03.2017
+                            span.blog-item__name Бетонная чаша бассейна: строим на долгие-долгие годы!
+                            span.blog-item__txt Каждый бассейн   это индивидуальное гидротехническое сооружение, которое необходимо рассчитывать для каждого владельца персонально. В данной статье мы расскажем как правильно по этапам осуществить строительство бетонной чаши бассейна.
+                            span.view-all
+                                | Читать дальше
+                                span.icon-16-arrow-link
+                    .col.l4.s12
+                        a(href="#").blog-item
+                            span.blog-item__img
+                                img(src="assets/images/blog3.jpg", alt="")
+                            span.blog-item__date 02.03.2017
+                            span.blog-item__name Как экономно отапливать свой дом
+                            span.blog-item__txt Мы продолжаем цикл статей об энергоэффективности и рассмотрим плюсы и минусы самых популярных и доступных источников энергии для отопления частного дома.
+                            span.view-all
+                                | Читать дальше
+                                span.icon-16-arrow-link
+                #tab2.tab-pane
+                #tab3.tab-pane
+                #tab4.tab-pane
+        //section seo-section
+        section.seo-section.seo-section--brd
+          .container
+            p Купить оборудование для бассейнов и аквапарков, купить котел, заказать проект аквапарка, заказать концепцию аквапарка. Вотерпарк (Waterpark) это компания, основным направлением которой является строительство аквапарков, создание проектов аквапарков. Проектирование аквапарков является нашей главной деятельностью, но кроме того мы работаем на таком поле как поставки оборудования для аквапарков, оборудование для бассейнов, отопительное оборудование, отопление дома, системы отопления.
+            h5  Строительство аквапарков
+            p Если вас интересует строительство аквапарков – обязательно обращайтесь инженерам и консультантам компании Вотерпарк. Мы создадим для Вас проект аквапарка, проведем все экономические исследования, закупим оборудование для аквапарков и бассейнов, выполним все строительные работы и обязательно проведем полный контроль качества.
+            p Почему строительство аквапарка стоит доверять именно компании Waterpark? Мы строим аквапарки в Украине, России, Казахстане, Молдове и других странах более 15 лет! Компания Waterpark учувствовала в реализации 12 аквапарков, а также поставила оборудование для бассейнов, оборудование для аквапарков, отопительное оборудование. Дизайнеры и инженеры компании Waterpark создали более 30 проектов аквапарков в том числе проекты летних аквапарков, закрытых аквапарков. Все объекты, где компания Waterpark выполнила строительство аквапарков, поставки отопительного оборудования, оборудования для бассейнов.
+            p Строительство аквапарков становится все более перспективным, так как все больше людей хотят ощутить себя на море либо повеселиться на водных горках 365 дней в году, даже в условиях суровой зимы Украины, России, Казахстана и др.
+
+        //footer
+      include _footer

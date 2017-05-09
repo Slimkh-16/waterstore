@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      div
+        strong Для полной функциональности этого сайта необходимо включить JavaScript. Вот 
+        a(href="https://artjoker.ua/ru/blog/how-to-enable-javascript/" target="_blank") инструкции,
+        | как включить JavaScript в вашем браузере. 
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    //mobile menu
+    include _mobile__nav
+    .page-wrap
+      // wrapper start
+      .wrapper
+        // header SECTION
+        include _header
+
+        // header SECTION
+        //breadcrumbs
+        section.breadcrumbs
+          .container
+            ul
+              li
+                a(href="#") Главная
+              li
+                span Услуги
+            .head-page Услуги
+        section.blog-section.action--all
+          .container
+            .product-slider-tabs
+              .product-tab__navs
+                ul.tabs
+                  li.tab
+                    a.active(href='#tab1') Услуги
+                  li.tab
+                    a(href='#tab2')  Проекты аквапарков
+                  li.tab
+                    a(href='#tab3')  Бассейны
+                  li.tab
+                    a(href='#tab4')  Водные горки
+            #tab1.tab-pane.row
+              mixin catalog-item(img,title)
+                .col.action-item
+                  a(href="#").catalog-item
+                    span.catalog-item__img
+                      img(src="assets/images/#{img}.jpg",alt="")
+                    span.catalog-item__name
+                      span= title
+              +catalog-item('cat1','Маркетинговые исследования водно-развлекательного рынка')
+              +catalog-item('cat2','Дизайн и концепция аквапарка')
+              +catalog-item('cat3','Проектирование аквапарка и водно-развлекательного комплекса')
+              +catalog-item('cat4','Руководство строительством аквапарка')
+              +catalog-item('cat5','Обслуживание и ремонт водных горок и аквапарков')
+              +catalog-item('cat6','Монтаж газовых котлов')
+              +catalog-item('cat7','Напольные котлы')
+              +catalog-item('cat8','Термостат Salus RT 300 и бесплатная доставка в подарок')
+            #tab2.tab-pane
+            #tab3.tab-pane
+            #tab4.tab-pane
+        //section seo-section
+        section.seo-section
+          .container
+            p Купить оборудование для бассейнов и аквапарков, купить котел, заказать проект аквапарка, заказать концепцию аквапарка. Вотерпарк (Waterpark) это компания, основным направлением которой является строительство аквапарков, создание проектов аквапарков. Проектирование аквапарков является нашей главной деятельностью, но кроме того мы работаем на таком поле как поставки оборудования для аквапарков, оборудование для бассейнов, отопительное оборудование, отопление дома, системы отопления.
+            h5  Строительство аквапарков
+            p Если вас интересует строительство аквапарков – обязательно обращайтесь инженерам и консультантам компании Вотерпарк. Мы создадим для Вас проект аквапарка, проведем все экономические исследования, закупим оборудование для аквапарков и бассейнов, выполним все строительные работы и обязательно проведем полный контроль качества.
+            p Почему строительство аквапарка стоит доверять именно компании Waterpark? Мы строим аквапарки в Украине, России, Казахстане, Молдове и других странах более 15 лет! Компания Waterpark учувствовала в реализации 12 аквапарков, а также поставила оборудование для бассейнов, оборудование для аквапарков, отопительное оборудование. Дизайнеры и инженеры компании Waterpark создали более 30 проектов аквапарков в том числе проекты летних аквапарков, закрытых аквапарков. Все объекты, где компания Waterpark выполнила строительство аквапарков, поставки отопительного оборудования, оборудования для бассейнов.
+            p Строительство аквапарков становится все более перспективным, так как все больше людей хотят ощутить себя на море либо повеселиться на водных горках 365 дней в году, даже в условиях суровой зимы Украины, России, Казахстана и др.
+
+        //footer
+      include _footer

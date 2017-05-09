@@ -45,143 +45,147 @@ html
 
         //product-container
         section.product-container
-            .container
-                .product-top-sect.row
-                    .col.l6.m12
-                        .product-one-slider
-                            .product-one-slider__img
-                                .swiper-container
-                                    .swiper-wrapper
-                                        .swiper-slide
-                                            img(src='assets/images/pr1.jpg', alt='')
-                                        .swiper-slide
-                                            img(src='assets/images/cat2.jpg', alt='')
-                                        .swiper-slide
-                                            img(src='assets/images/cat3.jpg', alt='')
-                                        .swiper-slide
-                                            img(src='assets/images/cat4.jpg', alt='')
-                                        .swiper-slide
-                                            img(src='assets/images/cat1.jpg', alt='')
-                                        .swiper-slide
-                                            img(src='assets/images/cat2.jpg', alt='')
-                                        .swiper-slide
-                                            img(src='assets/images/cat3.jpg', alt='')
-                                        .swiper-slide
-                                            img(src='assets/images/cat4.jpg', alt='')
-                            .product-one-slider__thumb
-                                .swiper-container
-                                    .swiper-wrapper
-                                        .swiper-slide(data-slide="1").active
-                                            img(src='assets/images/pr1.jpg', alt='')
-                                        .swiper-slide(data-slide="2")
-                                            img(src='assets/images/cat2.jpg', alt='')
-                                        .swiper-slide(data-slide="3")
-                                            img(src='assets/images/cat3.jpg', alt='')
-                                        .swiper-slide(data-slide="4")
-                                            img(src='assets/images/cat4.jpg', alt='')
-                                        .swiper-slide(data-slide="5")
-                                            img(src='assets/images/cat1.jpg', alt='')
-                                        .swiper-slide(data-slide="6")
-                                            img(src='assets/images/cat2.jpg', alt='')
-                                        .swiper-slide(data-slide="7")
-                                            img(src='assets/images/cat3.jpg', alt='')
-                                        .swiper-slide(data-slide="8")
-                                            img(src='assets/images/cat4.jpg', alt='')
-                                .swiper-button-prev
-                                .swiper-button-next
-                    .col.l4.m12
-                        .product-name Buderus Logamax Plus GB172i – 20K газовый двухконтурный конденсационный настенный котел
-                        .product-price
-                            span.new 3 519
-                                sub грн
-                        .product-order-button
-                            .quantity-wrap
-                                span.minus-icon
-                                    | &#8722;
-                                input.quantity(type='text', value='1',data-price-product="14000")
-                                span.plus-icon
-                                    | +
-                            a(href="#").btn.btn-to-cart
-                                .btn-animate
-                                span.icon-37-buy-tovar
-                                span В корзину
-                            a(href="#").buy-one-click.btn.btn-green
-                                span.icon-38-one-click-button
-                                | Купить в 1 клик
-                        .product-char
-                            table
-                                tr
-                                    td Мощность
-                                    td 21,3 кВт
-                                tr
-                                    td Размеры
-                                    td 840х440х350 мм
-                                tr
-                                    td Диаметр дымохода
-                                    td 60/100, 80/125, 80/80 мм
-                                tr
-                                    td Макс раб. давление
-                                    td 3 бар
+          .container
+            .product-top-sect.row
+              .col.l6.m12
+                .product-one-slider
+                  .product-one-slider__img
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide
+                          img(src='assets/images/pr1.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/cat2.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/cat3.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/cat4.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/cat1.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/cat2.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/cat3.jpg', alt='')
+                        .swiper-slide
+                          img(src='assets/images/cat4.jpg', alt='')
+                  .product-one-slider__thumb
+                    .swiper-container
+                      .swiper-wrapper
+                        .swiper-slide(data-slide="1").active
+                          img(src='assets/images/pr1.jpg', alt='')
+                        .swiper-slide(data-slide="2")
+                          img(src='assets/images/cat2.jpg', alt='')
+                        .swiper-slide(data-slide="3")
+                          img(src='assets/images/cat3.jpg', alt='')
+                        .swiper-slide(data-slide="4")
+                          img(src='assets/images/cat4.jpg', alt='')
+                        .swiper-slide(data-slide="5")
+                          img(src='assets/images/cat1.jpg', alt='')
+                        .swiper-slide(data-slide="6")
+                          img(src='assets/images/cat2.jpg', alt='')
+                        .swiper-slide(data-slide="7")
+                          img(src='assets/images/cat3.jpg', alt='')
+                        .swiper-slide(data-slide="8")
+                          img(src='assets/images/cat4.jpg', alt='')
+                    .swiper-button-prev
+                    .swiper-button-next
+              .col.l4.m12
+                .product-name Buderus Logamax Plus GB172i – 20K газовый двухконтурный конденсационный настенный котел
+                .product-price
+                  span.new 3 519
+                    sub грн
+                .product-order-button
+                  .quantity-wrap
+                    span.minus-icon
+                      | &#8722;
+                    input.quantity(type='text', value='1',data-price-product="14000")
+                    span.plus-icon
+                      | +
+                  a(href="#").btn.btn-to-cart
+                    .btn-animate
+                    span.icon-37-buy-tovar
+                    span В корзину
+                  a(href="#").buy-one-click.btn.btn-green
+                    span.icon-38-one-click-button
+                    | Купить в 1 клик
+                .product-char
+                  table
+                    tr
+                      td Мощность
+                      td 21,3 кВт
+                    tr
+                      td Размеры
+                      td 840х440х350 мм
+                    tr
+                      td Диаметр дымохода
+                      td 60/100, 80/125, 80/80 мм
+                    tr
+                      td Макс раб. давление
+                      td 3 бар
 
-                    .col.l2.m12
-                        .product-inf
-                            table
-                                tr
-                                    td Код товара:
-                                    td АБ455-47-88
-                                tr
-                                    td Наличие:
-                                    td
-                                        span.icon-31-paid
-                                        | есть в наличии
-                                tr
-                                    td Бренд:
-                                    td
-                                        a(href="#") Buderus
-                        .product-inf-list
-                            ul
-                                li
-                                    img(src="images/ico-features-01.svg",alt="")
-                                    span Доставка по всей Украине
-                                li
-                                    img(src="images/ico-features-02.svg",alt="")
-                                    span 100% качественный товар
-                                li
-                                    img(src="images/ico-features-03.svg",alt="")
-                                    span Оплата при получении
-                                li
-                                    img(src="images/ico-features-04.svg",alt="")
-                                    span Гарантийное и послегарантийное обслуживание
-                        .product-social
-                            img(src="assets/images/product-social.jpg",alt="")
-                .product-tabs
-                    .product-tab__navs
-                        ul.tabs
-                            li.tab
-                                a.active(href='#tab1') Описание
-                            li.tab
-                                a(href='#tab2') Характеристики
-                            li.tab
-                                a(href='#tab3') Отзывы
-                            li.tab
-                                a(href='#tab4') Оплата и доставка
-                            li.tab
-                                a(href='#tab5') Обмен и возврат
-                    .product-tabs-content
-                        #tab1.tab-pane
-                            .row.icons-container
-                                .col.l3.m6.s12
-                                    .tab-char
-                                        .tab-char__icon
-                                            svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='88.147px', height='86.267px', viewbox='0 0 88.147 86.267', enable-background='new 0 0 88.147 86.267', xml:space='preserve')
-                                                g
-                                                    rect(x='16.251', y='1.5', fill='#EDEDED', width='70.396', height='71.185')
-                                                    path(fill='none', stroke='#49D492', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', d='M16.251,72.685\
+              .col.l2.m12
+                .product-inf
+                  table
+                    tr
+                      td Код товара:
+                      td АБ455-47-88
+                    tr
+                      td Наличие:
+                      td
+                        span.icon-31-paid
+                        | есть в наличии
+                    tr
+                      td Бренд:
+                      td
+                        a(href="#") Buderus
+                .product-inf-list
+                  ul
+                    li
+                      a(href="#")
+                        img(src="images/ico-features-01.svg",alt="")
+                        span Доставка по всей Украине
+                    li
+                      a(href="#")
+                        img(src="images/ico-features-02.svg",alt="")
+                        span 100% качественный товар
+                    li
+                      a(href="#")
+                        img(src="images/ico-features-03.svg",alt="")
+                        span Оплата при получении
+                    li
+                      a(href="#")
+                        img(src="images/ico-features-04.svg",alt="")
+                        span Гарантийное и послегарантийное обслуживание
+                .product-social
+                  img(src="assets/images/product-social.jpg",alt="")
+            .product-tabs
+              .product-tab__navs
+                ul.tabs
+                  li.tab
+                    a.active(href='#tab1') Описание
+                  li.tab
+                    a(href='#tab2') Характеристики
+                  li.tab
+                    a(href='#tab3') Отзывы
+                  li.tab
+                    a(href='#tab4') Оплата и доставка
+                  li.tab
+                    a(href='#tab5') Обмен и возврат
+              .product-tabs-content
+                #tab1.tab-pane
+                  .row.icons-container
+                    .col.l3.m6.s12
+                      .tab-char
+                        .tab-char__icon
+                          svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='88.147px', height='86.267px', viewbox='0 0 88.147 86.267', enable-background='new 0 0 88.147 86.267', xml:space='preserve')
+                            g
+                              rect(x='16.251', y='1.5', fill='#EDEDED', width='70.396', height='71.185')
+                              path(fill='none', stroke='#49D492', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', d='M16.251,72.685\
                                             c0,0,68.075-2.25,68.075-71.185')
-                                                    line(fill='none', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', x1='16.251', y1='1.5', x2='16.251', y2='77.663')
-                                                    line(fill='none', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', x1='86.647', y1='72.685', x2='10.485', y2='72.685')
-                                                    g
-                                                        path(fill='#5C6670', d='M7.074,4.763c0.15,0.507,0.311,1.036,0.479,1.585c0.169,0.549,0.345,1.099,0.528,1.649\
+                              line(fill='none', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', x1='16.251', y1='1.5', x2='16.251', y2='77.663')
+                              line(fill='none', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', x1='86.647', y1='72.685', x2='10.485', y2='72.685')
+                              g
+                                path(fill='#5C6670', d='M7.074,4.763c0.15,0.507,0.311,1.036,0.479,1.585c0.169,0.549,0.345,1.099,0.528,1.649\
                                               c0.184,0.549,0.366,1.09,0.55,1.621c0.183,0.531,0.359,1.031,0.528,1.501c0.141-0.507,0.277-1.06,0.409-1.656\
                                               C9.7,8.867,9.832,8.247,9.964,7.603c0.131-0.643,0.261-1.298,0.387-1.966c0.127-0.667,0.247-1.325,0.359-1.973h1.832\
                                               c-0.328,1.767-0.693,3.465-1.098,5.095c-0.403,1.63-0.854,3.188-1.351,4.672H8.385c-0.728-1.897-1.433-3.969-2.113-6.215\
@@ -189,21 +193,21 @@ html
                                               C0.691,7.128,0.328,5.43,0,3.664h1.902c0.112,0.639,0.232,1.292,0.359,1.959C2.389,6.29,2.52,6.945,2.656,7.589\
                                               c0.136,0.644,0.274,1.266,0.416,1.867c0.141,0.601,0.281,1.156,0.423,1.663c0.178-0.479,0.359-0.984,0.542-1.515\
                                               C4.221,9.073,4.401,8.533,4.58,7.983c0.179-0.55,0.35-1.097,0.515-1.642c0.164-0.544,0.316-1.071,0.458-1.578H7.074z')
-                                                    g
-                                                        path(fill='#5C6670', d='M81.758,76.783l1.705-0.282v2.227h2.621v1.424h-2.621v3.002c0,0.592,0.094,1.015,0.281,1.268\
+                              g
+                                path(fill='#5C6670', d='M81.758,76.783l1.705-0.282v2.227h2.621v1.424h-2.621v3.002c0,0.592,0.094,1.015,0.281,1.268\
                                               c0.188,0.254,0.508,0.381,0.959,0.381c0.31,0,0.585-0.033,0.824-0.098c0.239-0.066,0.43-0.127,0.57-0.184l0.282,1.353\
                                               c-0.197,0.085-0.456,0.172-0.775,0.261c-0.319,0.09-0.695,0.134-1.127,0.134c-0.526,0-0.966-0.07-1.317-0.212\
                                               c-0.353-0.141-0.633-0.345-0.839-0.612c-0.207-0.268-0.353-0.592-0.438-0.973c-0.084-0.38-0.126-0.815-0.126-1.304V76.783z')
 
-                                        .tab-char__info
-                                            | Мощность
-                                            span 21,3 кВт
-                                .col.l3.m6.s12
-                                    .tab-char
-                                        .tab-char__icon
-                                            svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='83px', height='82.998px', viewbox='0 0 83 82.998', enable-background='new 0 0 83 82.998', xml:space='preserve')
-                                                g
-                                                    path(fill='none',stroke="#5F666F", d='M80.743,69.566c-0.547,0.443-1.025,0.924-1.488,1.386c-1.32,1.32-2.361,2.363-4.556,2.363\
+                        .tab-char__info
+                          | Мощность
+                          span 21,3 кВт
+                    .col.l3.m6.s12
+                      .tab-char
+                        .tab-char__icon
+                          svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='83px', height='82.998px', viewbox='0 0 83 82.998', enable-background='new 0 0 83 82.998', xml:space='preserve')
+                            g
+                              path(fill='none',stroke="#5F666F", d='M80.743,69.566c-0.547,0.443-1.025,0.924-1.488,1.386c-1.32,1.32-2.361,2.363-4.556,2.363\
                                                 c-2.193,0-3.235-1.043-4.556-2.363c-1.412-1.412-3.171-3.17-6.511-3.17c-3.339,0-5.098,1.758-6.512,3.17\
                                                 c-1.318,1.32-2.36,2.363-4.555,2.363s-3.235-1.043-4.556-2.363c-1.412-1.412-3.172-3.17-6.511-3.17s-5.097,1.758-6.511,3.17\
                                                 c-1.32,1.32-2.361,2.363-4.556,2.363s-3.235-1.043-4.555-2.363c-1.412-1.412-3.172-3.17-6.512-3.17\
@@ -215,7 +219,7 @@ html
                                                 c1.414,1.412,3.172,3.172,6.511,3.172c3.34,0,5.1-1.76,6.512-3.172c1.319-1.32,2.361-2.361,4.555-2.361\
                                                 c2.194,0,3.236,1.041,4.556,2.361c1.414,1.412,3.172,3.172,6.511,3.172c3.34,0,5.1-1.76,6.512-3.172\
                                                 c0.433-0.434,0.842-0.842,1.278-1.197c0.593-0.482,0.682-1.354,0.2-1.945C82.209,69.175,81.339,69.085,80.743,69.566z')
-                                                    path(fill='none',stroke="#5F666F", d='M8.762,46.988c0.346,2.085,0.89,4.125,1.619,6.088l-6.39,3.689c-0.318,0.182-0.551,0.485-0.645,0.84\
+                              path(fill='none',stroke="#5F666F", d='M8.762,46.988c0.346,2.085,0.89,4.125,1.619,6.088l-6.39,3.689c-0.318,0.182-0.551,0.485-0.645,0.84\
                                                 c-0.094,0.354-0.046,0.731,0.139,1.05c2.518,4.358,7.938,6.02,12.422,3.96c0.638,0.748,1.462,1.644,2.462,2.682\
                                                 c0.532,0.55,1.409,0.564,1.957,0.033c0.55-0.531,0.565-1.407,0.034-1.956c-1.357-1.406-2.395-2.565-3.001-3.354\
                                                 c-0.422-0.548-1.187-0.701-1.787-0.355l-0.241,0.138c-2.891,1.67-6.504,1.009-8.638-1.401l6.102-3.521\
@@ -245,7 +249,7 @@ html
                                                 c-0.59,2.199-0.393,4.485,0.545,6.527c-1.619,1.338-3.11,2.829-4.455,4.45l-6.396-3.693c-0.663-0.383-1.508-0.156-1.89,0.506\
                                                 c-1.294,2.239-1.638,4.848-0.968,7.347c0.588,2.197,1.896,4.075,3.729,5.376c-0.733,1.963-1.278,4.002-1.628,6.087H1.384\
                                                 C0.619,35.966,0,36.584,0,37.35C0,42.377,3.853,46.523,8.762,46.988z')
-                                                    path(fill='none',stroke="#5F666F", d='M80.743,76.482c-0.547,0.445-1.025,0.925-1.488,1.389c-1.32,1.318-2.361,2.36-4.556,2.36\
+                              path(fill='none',stroke="#5F666F", d='M80.743,76.482c-0.547,0.445-1.025,0.925-1.488,1.389c-1.32,1.318-2.361,2.36-4.556,2.36\
                                                 c-2.193,0-3.235-1.042-4.556-2.36c-1.412-1.414-3.171-3.173-6.511-3.173c-3.339,0-5.098,1.759-6.512,3.173\
                                                 c-1.318,1.318-2.36,2.36-4.555,2.36s-3.235-1.042-4.556-2.36c-1.412-1.414-3.172-3.173-6.511-3.173s-5.097,1.759-6.511,3.173\
                                                 c-1.32,1.318-2.361,2.36-4.556,2.36s-3.235-1.042-4.555-2.36c-1.412-1.414-3.172-3.173-6.512-3.173\
@@ -257,32 +261,32 @@ html
                                                 c1.414,1.413,3.172,3.172,6.511,3.172c3.34,0,5.1-1.759,6.512-3.172c1.319-1.319,2.361-2.361,4.555-2.361\
                                                 c2.194,0,3.236,1.042,4.556,2.361c1.414,1.413,3.172,3.172,6.511,3.172c3.34,0,5.1-1.759,6.512-3.172\
                                                 c0.433-0.433,0.842-0.842,1.278-1.196c0.593-0.482,0.682-1.354,0.2-1.946C82.209,76.092,81.339,76,80.743,76.482z')
-                                                    path(fill='none',stroke="#83D293", d='M36.724,57.948c0.198,0.101,0.413,0.151,0.626,0.151c0.399,0,0.793-0.175,1.064-0.499l13.833-16.6\
+                              path(fill='none',stroke="#83D293", d='M36.724,57.948c0.198,0.101,0.413,0.151,0.626,0.151c0.399,0,0.793-0.175,1.064-0.499l13.833-16.6\
                                                 c0.343-0.412,0.417-0.986,0.188-1.473c-0.227-0.486-0.715-0.796-1.252-0.796H44.57l2.437-12.179\
                                                 c0.127-0.64-0.209-1.281-0.807-1.541c-0.598-0.257-1.296-0.066-1.676,0.466L30.692,44.844c-0.303,0.422-0.342,0.977-0.105,1.438\
                                                 s0.711,0.752,1.229,0.752h6.528l-2.337,9.346C35.852,57.005,36.149,57.656,36.724,57.948z')
-                                                    path(fill='#EBEBEB', d='M34.505,44.266l8.525-11.935l-1.503,7.513c-0.081,0.407,0.023,0.829,0.286,1.148\
+                              path(fill='#EBEBEB', d='M34.505,44.266l8.525-11.935l-1.503,7.513c-0.081,0.407,0.023,0.829,0.286,1.148\
                                                 c0.264,0.321,0.654,0.508,1.07,0.508h5.346l-8.072,9.685l1.301-5.2c0.104-0.413,0.011-0.851-0.252-1.187\
                                                 c-0.262-0.335-0.664-0.531-1.09-0.531H34.505L34.505,44.266z')
-                                        .tab-char__info
-                                            | Производительность
-                                            span 113 л/мин
-                                .col.l3.m6.s12
-                                    .tab-char
-                                        .tab-char__icon
-                                            svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='77px', height='77px', viewbox='0 0 77 77', enable-background='new 0 0 77 77', xml:space='preserve')
-                                                g
-                                                    path(fill='none',stroke="#83D293", d='M51.334,50.05v-8.983c1.416,0,2.566-1.15,2.566-2.566v-5.133c0-1.416-1.15-2.566-2.566-2.566h-5.133v-8.984\
+                        .tab-char__info
+                          | Производительность
+                          span 113 л/мин
+                    .col.l3.m6.s12
+                      .tab-char
+                        .tab-char__icon
+                          svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='77px', height='77px', viewbox='0 0 77 77', enable-background='new 0 0 77 77', xml:space='preserve')
+                            g
+                              path(fill='none',stroke="#83D293", d='M51.334,50.05v-8.983c1.416,0,2.566-1.15,2.566-2.566v-5.133c0-1.416-1.15-2.566-2.566-2.566h-5.133v-8.984\
                                                 c0-0.708-0.576-1.283-1.284-1.283s-1.283,0.575-1.283,1.283v8.984h-5.133v-8.984c0-0.708-0.575-1.283-1.284-1.283\
                                                 c-0.708,0-1.283,0.575-1.283,1.283v8.984h-5.133v-8.984c0-0.708-0.575-1.283-1.283-1.283c-0.709,0-1.283,0.575-1.283,1.283v8.984\
                                                 h-5.134c-1.415,0-2.567,1.15-2.567,2.566V38.5c0,1.416,1.152,2.566,2.567,2.566v8.983c0,3.538,2.878,6.417,6.417,6.417h15.399\
                                                 C48.455,56.467,51.334,53.588,51.334,50.05z')
-                                                    path(fill='#EBEBEB', d='M25.668,50.05V39.783c0-0.708-0.576-1.283-1.284-1.283h-1.283v-5.133h28.233V38.5h-1.283\
+                              path(fill='#EBEBEB', d='M25.668,50.05V39.783c0-0.708-0.576-1.283-1.284-1.283h-1.283v-5.133h28.233V38.5h-1.283\
                                                 c-0.709,0-1.283,0.575-1.283,1.283V50.05c0,2.122-1.728,3.851-3.851,3.851H29.518C27.395,53.9,25.668,52.172,25.668,50.05z')
-                                                    path(fill='#83D293', d='M37.217,41.066c-2.122,0-3.85,1.728-3.85,3.851c0,2.122,1.728,3.85,3.85,3.85\
+                              path(fill='#83D293', d='M37.217,41.066c-2.122,0-3.85,1.728-3.85,3.851c0,2.122,1.728,3.85,3.85,3.85\
                                                 c2.123,0,3.851-1.728,3.851-3.85C41.067,42.794,39.34,41.066,37.217,41.066z M37.217,46.199c-0.707,0-1.283-0.575-1.283-1.282\
                                                 s0.576-1.284,1.283-1.284s1.284,0.577,1.284,1.284S37.924,46.199,37.217,46.199z')
-                                                    path(fill='none',stroke="#5F666F", d='M38.501,0C17.272,0,0,17.271,0,38.5c0,10.283,4.006,19.95,11.349,27.289\
+                              path(fill='none',stroke="#5F666F", d='M38.501,0C17.272,0,0,17.271,0,38.5c0,10.283,4.006,19.95,11.349,27.289\
                                                 c0.602,0.517,1.699,1.113,2.923,1.113c0.877,0,1.82-0.308,2.688-1.177c0.951-0.952,1.133-1.938,1.116-2.597\
                                                 c-0.041-1.62-1.262-2.769-1.354-2.85c-5.815-5.819-9.02-13.553-9.02-21.779c0-16.982,13.817-30.8,30.8-30.8\
                                                 C55.482,7.7,69.3,21.518,69.3,38.5v20.533c0,5.661-4.604,10.267-10.267,10.267h-7.699c-5.661,0-10.267-4.606-10.267-10.269\
@@ -294,25 +298,25 @@ html
                                                 c-0.005-0.709-0.623-1.232-1.292-1.275c-0.709,0.003-1.28,0.582-1.275,1.291C33.437,68.944,41.493,77,51.334,77h7.707\
                                                 C68.945,76.936,77,68.877,77,59.033V38.5C77,17.271,59.729,0,38.501,0z')
 
-                                        .tab-char__info
-                                            | Питание
-                                            span 220 В
-                                .col.l3.m6.s12
-                                    .tab-char
-                                        .tab-char__icon
+                        .tab-char__info
+                          | Питание
+                          span 220 В
+                    .col.l3.m6.s12
+                      .tab-char
+                        .tab-char__icon
 
-                                            svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='125.5px', height='73.369px', viewbox='0 0 125.5 73.369', enable-background='new 0 0 125.5 73.369', xml:space='preserve')
-                                                g
-                                                    rect(x='36.684', y='0.926', fill='#EDEDED', width='88.816', height='71.699')
-                                                    g
-                                                        path(fill='none',stroke="#49D492", d='M94.068,57.724c-0.543,0-0.982-0.44-0.982-0.981V10.51c0-0.542,0.439-0.982,0.982-0.982\
+                          svg.animate-svg(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='125.5px', height='73.369px', viewbox='0 0 125.5 73.369', enable-background='new 0 0 125.5 73.369', xml:space='preserve')
+                            g
+                              rect(x='36.684', y='0.926', fill='#EDEDED', width='88.816', height='71.699')
+                              g
+                                path(fill='none',stroke="#49D492", d='M94.068,57.724c-0.543,0-0.982-0.44-0.982-0.981V10.51c0-0.542,0.439-0.982,0.982-0.982\
                                                   c0.542,0,0.981,0.44,0.981,0.982v46.232C95.05,57.283,94.61,57.724,94.068,57.724z')
-                                                    g
-                                                        polygon(fill='#49D492', points='90.292,16.821 94.068,0.926 97.844,16.821 		')
-                                                    g
-                                                        polygon(fill='#49D492', points='97.844,56.405 94.068,72.299 90.292,56.405 		')
-                                                    g
-                                                        path(fill='none',stroke="#5C6670" d='M118.236,44.721c-0.667,0.203-1.507,0.389-2.516,0.556c-1.011,0.167-2.071,0.25-3.184,0.25\
+                              g
+                                polygon(fill='#49D492', points='90.292,16.821 94.068,0.926 97.844,16.821 		')
+                              g
+                                polygon(fill='#49D492', points='97.844,56.405 94.068,72.299 90.292,56.405 		')
+                              g
+                                path(fill='none',stroke="#5C6670" d='M118.236,44.721c-0.667,0.203-1.507,0.389-2.516,0.556c-1.011,0.167-2.071,0.25-3.184,0.25\
                                                   c-1.15,0-2.179-0.177-3.086-0.528c-0.909-0.352-1.682-0.857-2.322-1.515c-0.639-0.658-1.13-1.454-1.473-2.392\
                                                   c-0.344-0.936-0.514-1.988-0.514-3.155c0-1.149,0.142-2.192,0.429-3.128c0.288-0.936,0.71-1.737,1.267-2.405\
                                                   c0.556-0.667,1.232-1.182,2.028-1.543c0.798-0.361,1.715-0.542,2.752-0.542c0.706,0,1.325,0.083,1.864,0.25\
@@ -320,177 +324,210 @@ html
                                                   c0.704,0.844,1.679,1.266,2.919,1.266c0.539,0,0.997-0.022,1.377-0.07c0.38-0.045,0.69-0.096,0.933-0.152v-8.341\
                                                   c-0.298-0.203-0.692-0.393-1.184-0.569c-0.491-0.177-1.015-0.264-1.57-0.264c-1.224,0-2.117,0.416-2.684,1.25\
                                                   C108.87,35.295,108.588,36.426,108.588,37.854z')
-                                                    line(fill='none', stroke='#D1D1D1', stroke-linecap='round', stroke-miterlimit='10', x1='125.5', y1='0.926', x2='36.558', y2='0.926')
-                                                    line(fill='none', stroke='#D1D1D1', stroke-linecap='round', stroke-miterlimit='10', x1='125.5', y1='72.625', x2='36.558', y2='72.625')
-                                                    g
-                                                        circle(fill='#FFFFFF', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', cx='36.685', cy='36.685', r='35.185')
-                                                        circle(fill='#FFFFFF', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', cx='36.684', cy='36.685', r='25.366')
+                              line(fill='none', stroke='#D1D1D1', stroke-linecap='round', stroke-miterlimit='10', x1='125.5', y1='0.926', x2='36.558', y2='0.926')
+                              line(fill='none', stroke='#D1D1D1', stroke-linecap='round', stroke-miterlimit='10', x1='125.5', y1='72.625', x2='36.558', y2='72.625')
+                              g
+                                circle(fill='#FFFFFF', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', cx='36.685', cy='36.685', r='35.185')
+                                circle(fill='#FFFFFF', stroke='#5C6670', stroke-width='3', stroke-linecap='round', stroke-miterlimit='10', cx='36.684', cy='36.685', r='25.366')
 
-                                        .tab-char__info
-                                            | Диаметр
-                                            | соединения
-                                            span 75 мм
-                        #tab2.tab-pane
-                            | tab 2
-                        #tab3.tab-pane
-                            | tab 3
-                        #tab4.tab-pane
-                            | tab 4
-                        #tab5.tab-pane
-                            | tab 5
-                    .product-container-info
-                        .product-info-head Buderus Logamax Plus GB172i – 20K газовый двухконтурный конденсационный настенный котел
-                        p Котел Buderus Logamax Plus GB172i – 20K это новинка среди конденсационных настенных котлов, мощностью 21,3 кВт. Котел предназначен для отопления и для обеспечения ГВС. Buderus Logamax Plus GB172 i -20K газовый двухконтурный конденсационный настенный котел вобрал в себя самые последние новинки термотехники. Котел оснащен конденсационным теплообменником WB5, системой управления BC25 c возможным совмещением с Logamatic EMS plus и Logamatic 4000.
-                        p Лицевая панель Buderus Logamax Plus GB172 i -20K газового двухконтурного конденсационного настенного котла изготовлена из специального ударостойкого стекла Titanium Glass черного цвета. Стекло такого типа можно с легкостью очистить обычным аэрозольным средством для чистки стеклянных поверхностей.  Котел Buderus Logamax Plus GB172 i -20K может стать прекрасным элементом вашего интерьера.
-                        p Теплообменник конденсационного двухконтурного котла Buderus Logamax Plus GB172 i -20K изготовлен из специального алюминиевого сплава ALU plus, который характеризуется высокой эффективностью и, что самое главное, долговечностью.
+                        .tab-char__info
+                          | Диаметр
+                          | соединения
+                          span 75 мм
+                  .product-container-info
+                    .product-info-head Buderus Logamax Plus GB172i – 20K газовый двухконтурный конденсационный настенный котел
+                    p Котел Buderus Logamax Plus GB172i – 20K это новинка среди конденсационных настенных котлов, мощностью 21,3 кВт. Котел предназначен для отопления и для обеспечения ГВС. Buderus Logamax Plus GB172 i -20K газовый двухконтурный конденсационный настенный котел вобрал в себя самые последние новинки термотехники. Котел оснащен конденсационным теплообменником WB5, системой управления BC25 c возможным совмещением с Logamatic EMS plus и Logamatic 4000.
+                    p Лицевая панель Buderus Logamax Plus GB172 i -20K газового двухконтурного конденсационного настенного котла изготовлена из специального ударостойкого стекла Titanium Glass черного цвета. Стекло такого типа можно с легкостью очистить обычным аэрозольным средством для чистки стеклянных поверхностей.  Котел Buderus Logamax Plus GB172 i -20K может стать прекрасным элементом вашего интерьера.
+                    p Теплообменник конденсационного двухконтурного котла Buderus Logamax Plus GB172 i -20K изготовлен из специального алюминиевого сплава ALU plus, который характеризуется высокой эффективностью и, что самое главное, долговечностью.
 
-                        .product-info-list.clearfix
-                            img.left(src="assets/images/pr-img.jpg",alt="")
-                            span Управление
-                            p Система управления котлом скрывается в нижней части котла Buderus Logamax Plus GB172 i -20K за откидывающейся панелью, встроена автоматика BC25, обеспечивающая  управление котлом и простоту настроек нужных параметров.  В том числе есть возможность совмещения с автоматическим регулятором Logamatic RC300, который может быть интегрирован непосредственно в сам котел рядом с BC25, что позволит расширить функционал создаваемой системы.
-                            ol
-                                li
-                                    b Расширительный бак
-                                    | объемом 12 л может быть установлен даже в больших системах отопления.
-                                li
-                                    b Вентилятор
-                                    | предварительного смешивания обеспечивает высокую производительность.
-                                li
-                                    b Контроллеры
-                                    | Logamatic BC25 обеспечивают все необходимые процессы.
-                                li
-                                    b Энергоэффективный насос Grundfos
-                                    | обеспечивает соответствиетребованиям стандарта ErP.
-                                li
-                                    b Теплообменник WB5
-                                    | надежный теплообменник из алюминий - кремниевого сплава.
-                                li
-                                    b Расходомерный клапан
-                                    | позволит легко переключатся между различными типами газа.
-                                li
-                                    b Система управления Logamatic RC300
-                                    | обеспечивает максимальную функциональность системы.
-                            p Газовым конденсационным котлом Buderus Logamax Plus GB172 i -20K так же можно управлять удаленно через Интернет с помощью инновационного регулятора Buderus Logamatic TC100 и Logamatic web KM200.
+                    .product-info-list.clearfix
+                      img.left(src="assets/images/pr-img.jpg",alt="")
+                      span Управление
+                      p Система управления котлом скрывается в нижней части котла Buderus Logamax Plus GB172 i -20K за откидывающейся панелью, встроена автоматика BC25, обеспечивающая  управление котлом и простоту настроек нужных параметров.  В том числе есть возможность совмещения с автоматическим регулятором Logamatic RC300, который может быть интегрирован непосредственно в сам котел рядом с BC25, что позволит расширить функционал создаваемой системы.
+                      ol
+                        li
+                          b Расширительный бак
+                          | объемом 12 л может быть установлен даже в больших системах отопления.
+                        li
+                          b Вентилятор
+                          | предварительного смешивания обеспечивает высокую производительность.
+                        li
+                          b Контроллеры
+                          | Logamatic BC25 обеспечивают все необходимые процессы.
+                        li
+                          b Энергоэффективный насос Grundfos
+                          | обеспечивает соответствиетребованиям стандарта ErP.
+                        li
+                          b Теплообменник WB5
+                          | надежный теплообменник из алюминий - кремниевого сплава.
+                        li
+                          b Расходомерный клапан
+                          | позволит легко переключатся между различными типами газа.
+                        li
+                          b Система управления Logamatic RC300
+                          | обеспечивает максимальную функциональность системы.
+                      p Газовым конденсационным котлом Buderus Logamax Plus GB172 i -20K так же можно управлять удаленно через Интернет с помощью инновационного регулятора Buderus Logamatic TC100 и Logamatic web KM200.
 
-                        .product-info-list.clearfix
-                            img(src="assets/images/pr-img2.jpg",alt="")
-                            span Энергоэффективность
-                            p Buderus Logamax Plus GB172 i -20K газовый двухконтурный конденсационный настенный котел был+ отнесен к наивысшему классу «А» согласно Европейской системе оценки энергоэффективности.
-                            iframe(width='420', height='345', src='https://www.youtube.com/embed/XGSy3_Czz8k')
-                            p Купить Buderus Logamax Plus GB172 i -20K газовый двухконтурный конденсационный настенный котел можно в нашем интернет магазине с доставкой по всей территории Украины. У нас вы так же можете заказать выезд специалиста для монтажа котла!
+                    .product-info-list.clearfix
+                      img(src="assets/images/pr-img2.jpg",alt="")
+                      span Энергоэффективность
+                      p Buderus Logamax Plus GB172 i -20K газовый двухконтурный конденсационный настенный котел был+ отнесен к наивысшему классу «А» согласно Европейской системе оценки энергоэффективности.
+                      iframe(width='420', height='345', src='https://www.youtube.com/embed/XGSy3_Czz8k')
+                      p Купить Buderus Logamax Plus GB172 i -20K газовый двухконтурный конденсационный настенный котел можно в нашем интернет магазине с доставкой по всей территории Украины. У нас вы так же можете заказать выезд специалиста для монтажа котла!
+
+                #tab2.tab-pane
+                  .product-table-char
+                    table
+                      tr
+                        td Мощность
+                        td 21,3 кВт
+                      tr
+                        td Размеры
+                        td 840х440х350 мм
+                      tr
+                        td Диаметр дымохода
+                        td 60/100, 80/125, 80/80 мм
+                      tr
+                        td Макс раб. давление
+                        td 3 бар
+                      tr
+                        td КПД
+                        td 108,5 %
+                      tr
+                        td Страна производитель
+                        td Германия
+                      tr
+                        td Электропитание
+                        td 230 В, 50 Гц
+                      tr
+                        td Электропитание
+                        td 253 Вт
+                      tr
+                        td Тип газа
+                        td II2H 3B/P (13 мбар)
+                      tr
+                        td Вес котла
+                        td 43 кг
+                #tab3.tab-pane
+                  .disqus
+                    img(src="assets/images/disqus.jpg")
+                #tab4.tab-pane
+                  | tab 4
+                #tab5.tab-pane
+                  | tab 5
 
         section.product-section.product-section--2
           .container
-              .heading-section.clearfix
-                  | Сопутствующие товары
-              .product-slider-cont
-                  .product-slider
-                      .swiper-container
-                          .swiper-wrapper
-                              mixin product-slide(img,name)
-                                  .swiper-slide
-                                      .product-slider-item
-                                          a(href="#")
-                                              .product-slider-item__img
-                                                  img(src="assets/images/#{img}.jpg", alt="")
-                                                  .product-status
-                                                      img(src="images/stat2.png", alt="")
-                                              .product-slider-item__name= name
-                                          .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
-                                          .product-slider-item__bottom.clearfix
-                                              .product-price
-                                                  span.old 4 019
-                                                      sub грн
-                                                  span.new 3 519
-                                                      sub грн
-                                              a(href="#").btn
-                                                  .btn-animate
-                                                  span Купить
-                              +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                              +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                              +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
-                              +product-slide('prod3','Водопад для бассейна "Дельфин")')
-                  .swiper-button-prev
-                      span.icon-15-arrow-left-karusel
-                  .swiper-button-next
-                      span.icon-14-arrow-right-karusel
-                  .swiper-pagination
+            .heading-section.clearfix
+              | Сопутствующие товары
+            .product-slider-cont
+              .product-slider
+                .swiper-container
+                  .swiper-wrapper
+                    mixin product-slide(img,name)
+                      .swiper-slide
+                        .product-slider-item
+                          a(href="#")
+                            .product-slider-item__img
+                              img(src="assets/images/#{img}.jpg", alt="")
+                              .product-status
+                                img(src="images/stat2.png", alt="")
+                            .product-slider-item__name= name
+                          .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
+                          .product-slider-item__bottom.clearfix
+                            .product-price
+                              span.old 4 019
+                                sub грн
+                              span.new 3 519
+                                sub грн
+                            a(href="#").btn
+                              .btn-animate
+                              span Купить
+                    +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
+                    +product-slide('prod3','Водопад для бассейна "Дельфин")')
+              .swiper-button-prev
+                span.icon-15-arrow-left-karusel
+              .swiper-button-next
+                span.icon-14-arrow-right-karusel
+              .swiper-pagination
 
         section.product-section
-            .container
-                .heading-section.clearfix
-                    | Ранее просмотренные
-                .product-slider-cont
-                    .product-slider
-                        .swiper-container
-                            .swiper-wrapper
-                                mixin product-slide(img,name)
-                                    .swiper-slide
-                                        .product-slider-item
-                                            a(href="#")
-                                                .product-slider-item__img
-                                                    img(src="assets/images/#{img}.jpg", alt="")
-                                                    .product-status
-                                                        img(src="images/stat1.png", alt="")
-                                                .product-slider-item__name= name
-                                            .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
-                                            .product-slider-item__bottom.clearfix
-                                                .product-price
-                                                    span.old 4 019
-                                                        sub грн
-                                                    span.new 3 519
-                                                        sub грн
-                                                a(href="#").btn
-                                                    .btn-animate
-                                                    span Купить
-                                +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
-                                +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                                +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                                +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
-                                +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
-                                +product-slide('prod3','Водопад для бассейна "Дельфин")')
-                    .swiper-button-prev
-                        span.icon-15-arrow-left-karusel
-                    .swiper-button-next
-                        span.icon-14-arrow-right-karusel
-                    .swiper-pagination
+          .container
+            .heading-section.clearfix
+              | Ранее просмотренные
+            .product-slider-cont
+              .product-slider
+                .swiper-container
+                  .swiper-wrapper
+                    mixin product-slide(img,name)
+                      .swiper-slide
+                        .product-slider-item
+                          a(href="#")
+                            .product-slider-item__img
+                              img(src="assets/images/#{img}.jpg", alt="")
+                              .product-status
+                                img(src="images/stat1.png", alt="")
+                            .product-slider-item__name= name
+                          .product-slider-item__detail Электросеть, В - 220  |  Диаметр подключения, мм - 50  |  Производительность, (м3/час) - 5.5  |  Мощность, кВт - 0.43
+                          .product-slider-item__bottom.clearfix
+                            .product-price
+                              span.old 4 019
+                                sub грн
+                              span.new 3 519
+                                sub грн
+                            a(href="#").btn
+                              .btn-animate
+                              span Купить
+                    +product-slide('prod1','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod2','Насос для гидромассажа и домашних SPA Emaux ST033')
+                    +product-slide('prod3','Бойлер Bosch Tronic 1000 T ES 050-5 N 0 WIV-B (электрический водонагревтель)')
+                    +product-slide('prod3','Водопад для бассейна "Дельфин")')
+              .swiper-button-prev
+                span.icon-15-arrow-left-karusel
+              .swiper-button-next
+                span.icon-14-arrow-right-karusel
+              .swiper-pagination
         //section blog-section
         section.blog-section.blog-section--brdt
-            .container
-              .heading-section Статьи
-                a.view-all(href="#")
-                  | Смотреть все статьи
-                  span.icon-16-arrow-link
-              .row
-                .col.l4.s12
-                  a(href="#").blog-item
-                    span.blog-item__img
-                      img(src="assets/images/blog1.jpg", alt="")
-                    span.blog-item__date 02.03.2017
-                    span.blog-item__name Роботы пылесосы для вашего бассейна
-                    span.blog-item__txt Как известно, различные дезинфицирующие установки и химия для бассейнов помогут сохранить чистоту воды в нем, но не самой чаши.  А чистку бассейна необходимо производить регулярно.
-                    span.view-all
-                      | Читать дальше
-                      span.icon-16-arrow-link
-                .col.l4.s12
-                  a(href="#").blog-item
-                    span.blog-item__img
-                      img(src="assets/images/blog2.jpg", alt="")
-                    span.blog-item__date 02.03.2017
-                    span.blog-item__name Бетонная чаша бассейна: строим на долгие-долгие годы!
-                    span.blog-item__txt Каждый бассейн   это индивидуальное гидротехническое сооружение, которое необходимо рассчитывать для каждого владельца персонально. В данной статье мы расскажем как правильно по этапам осуществить строительство бетонной чаши бассейна.
-                    span.view-all
-                      | Читать дальше
-                      span.icon-16-arrow-link
-                .col.l4.s12
-                  a(href="#").blog-item
-                    span.blog-item__img
-                      img(src="assets/images/blog3.jpg", alt="")
-                    span.blog-item__date 02.03.2017
-                    span.blog-item__name Как экономно отапливать свой дом
-                    span.blog-item__txt Мы продолжаем цикл статей об энергоэффективности и рассмотрим плюсы и минусы самых популярных и доступных источников энергии для отопления частного дома.
-                    span.view-all
-                      | Читать дальше
-                      span.icon-16-arrow-link
+          .container
+            .heading-section Статьи
+              a.view-all(href="#")
+                | Смотреть все статьи
+                span.icon-16-arrow-link
+            .row
+              .col.l4.s12
+                a(href="#").blog-item
+                  span.blog-item__img
+                    img(src="assets/images/blog1.jpg", alt="")
+                  span.blog-item__date 02.03.2017
+                  span.blog-item__name Роботы пылесосы для вашего бассейна
+                  span.blog-item__txt Как известно, различные дезинфицирующие установки и химия для бассейнов помогут сохранить чистоту воды в нем, но не самой чаши.  А чистку бассейна необходимо производить регулярно.
+                  span.view-all
+                    | Читать дальше
+                    span.icon-16-arrow-link
+              .col.l4.s12
+                a(href="#").blog-item
+                  span.blog-item__img
+                    img(src="assets/images/blog2.jpg", alt="")
+                  span.blog-item__date 02.03.2017
+                  span.blog-item__name Бетонная чаша бассейна: строим на долгие-долгие годы!
+                  span.blog-item__txt Каждый бассейн   это индивидуальное гидротехническое сооружение, которое необходимо рассчитывать для каждого владельца персонально. В данной статье мы расскажем как правильно по этапам осуществить строительство бетонной чаши бассейна.
+                  span.view-all
+                    | Читать дальше
+                    span.icon-16-arrow-link
+              .col.l4.s12
+                a(href="#").blog-item
+                  span.blog-item__img
+                    img(src="assets/images/blog3.jpg", alt="")
+                  span.blog-item__date 02.03.2017
+                  span.blog-item__name Как экономно отапливать свой дом
+                  span.blog-item__txt Мы продолжаем цикл статей об энергоэффективности и рассмотрим плюсы и минусы самых популярных и доступных источников энергии для отопления частного дома.
+                  span.view-all
+                    | Читать дальше
+                    span.icon-16-arrow-link
       //footer
       include _footer

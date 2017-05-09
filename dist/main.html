@@ -374,7 +374,7 @@
                     <div data-activates="drop-cart" class="dropdown-button head-dropdown__butt"><span class="icon-04-cart"><i class="cout">4</i></span>Корзина<span class="icon-05-arrow-down-header"></span></div>
                     <div id="drop-cart" class="cart-container dropdown-content drop-head drop-head--cart">
                       <div class="cart-container-box">
-                        <div class="cart-row">
+                        <div data-product-id="1" class="cart-row">
                           <div class="cart-col cart-col--1"><a href="#" class="cart-col-item"><span class="cart-col__img"><img src="assets/images/cart1.jpg" alt=""></span><span class="cart-col__txt">Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел</span></a></div>
                           <div class="cart-col cart-col--2">
                             <div class="quantity-wrap"><span class="minus-icon">&#8722;</span>
@@ -384,24 +384,34 @@
                           <div class="cart-col cart-col--3"><span class="js_item_total">14000</span>&nbsp; грн</div>
                           <div class="cart-col cart-col--4"><span class="icon-21-clear-filters js_remove_item"></span></div>
                         </div>
-                        <div class="cart-row">
+                        <div data-product-id="2" class="cart-row">
                           <div class="cart-col cart-col--1"><a href="#" class="cart-col-item"><span class="cart-col__img"><img src="assets/images/cart1.jpg" alt=""></span><span class="cart-col__txt">Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел</span></a></div>
                           <div class="cart-col cart-col--2">
                             <div class="quantity-wrap"><span class="minus-icon">&#8722;</span>
-                              <input type="text" value="1" data-price-product="16000" class="quantity"><span class="plus-icon">+</span>
+                              <input type="text" value="1" data-price-product="14000" class="quantity"><span class="plus-icon">+</span>
                             </div>
                           </div>
-                          <div class="cart-col cart-col--3"><span class="js_item_total">16000</span>&nbsp; грн</div>
+                          <div class="cart-col cart-col--3"><span class="js_item_total">14000</span>&nbsp; грн</div>
                           <div class="cart-col cart-col--4"><span class="icon-21-clear-filters js_remove_item"></span></div>
                         </div>
-                        <div class="cart-row">
+                        <div data-product-id="3" class="cart-row">
                           <div class="cart-col cart-col--1"><a href="#" class="cart-col-item"><span class="cart-col__img"><img src="assets/images/cart1.jpg" alt=""></span><span class="cart-col__txt">Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел</span></a></div>
                           <div class="cart-col cart-col--2">
                             <div class="quantity-wrap"><span class="minus-icon">&#8722;</span>
-                              <input type="text" value="1" data-price-product="20000" class="quantity"><span class="plus-icon">+</span>
+                              <input type="text" value="1" data-price-product="14000" class="quantity"><span class="plus-icon">+</span>
                             </div>
                           </div>
-                          <div class="cart-col cart-col--3"><span class="js_item_total">20000</span>&nbsp; грн</div>
+                          <div class="cart-col cart-col--3"><span class="js_item_total">14000</span>&nbsp; грн</div>
+                          <div class="cart-col cart-col--4"><span class="icon-21-clear-filters js_remove_item"></span></div>
+                        </div>
+                        <div data-product-id="4" class="cart-row">
+                          <div class="cart-col cart-col--1"><a href="#" class="cart-col-item"><span class="cart-col__img"><img src="assets/images/cart1.jpg" alt=""></span><span class="cart-col__txt">Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел</span></a></div>
+                          <div class="cart-col cart-col--2">
+                            <div class="quantity-wrap"><span class="minus-icon">&#8722;</span>
+                              <input type="text" value="1" data-price-product="14000" class="quantity"><span class="plus-icon">+</span>
+                            </div>
+                          </div>
+                          <div class="cart-col cart-col--3"><span class="js_item_total">14000</span>&nbsp; грн</div>
                           <div class="cart-col cart-col--4"><span class="icon-21-clear-filters js_remove_item"></span></div>
                         </div>
                       </div>
@@ -1004,6 +1014,7 @@
         </section>
       </div>
       <!--footer-->
+      <div class="overlay"></div>
       <footer class="footer">
         <div class="footer-container">
           <div class="container">
@@ -1062,16 +1073,40 @@
         </div>
       </footer>
       <div id="modal-thank" class="modal">
-        <div class="modal-content"><span class="modal-action modal-close modal-close--top"><span class="icon-ico28"></span></span>
+        <div class="modal-content"><span class="modal-action modal-close modal-close--top"><span class="icon-25-plus-tovar"></span></span>
           <div class="container align-center">
             <div class="modal-head">Спасибо, Ваша заявка отправлена!</div>
             <div class="modal-body">
-              <p>Наш менеджер свяжется с Вами в течение 15 минут.</p><span class="waves-effect waves-light btn modal-close">Закрыть</span>
+              <p>Наш менеджер свяжется с Вами в течение 15 минут.</p>
+              <div class="modal-foot clearfix"><span class="waves-effect waves-light btn modal-close left">Закрыть</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="modal-product" class="modal">
+        <div class="modal-content"><span class="modal-action modal-close modal-close--top"><span class="icon-25-plus-tovar"></span></span>
+          <div class="container align-center">
+            <div class="modal-head">Товар добавлен в корзину!</div>
+            <div class="modal-body">
+              <div class="cart-container-box">
+                <div data-product-id="10" class="cart-row">
+                  <div class="cart-col cart-col--1"><a href="#" class="cart-col-item"><span class="cart-col__img"><img src="assets/images/cart1.jpg" alt=""></span><span class="cart-col__txt">Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел</span></a></div>
+                  <div class="cart-col cart-col--2">
+                    <div class="quantity-wrap"><span class="minus-icon">−</span>
+                      <input type="text" value="1" data-price-product="14000" class="quantity"><span class="plus-icon">+</span>
+                    </div>
+                  </div>
+                  <div class="cart-col cart-col--3"><span class="js_item_total">14000</span>&nbsp; грн</div>
+                </div>
+              </div>
+              <div class="modal-foot clearfix"><span class="waves-effect waves-light modal-close left"><span class="icon-16-arrow-link"></span>Продолжить покупки</span><a href="#" class="btn btn--green right">
+                  <div class="btn-animate"></div><span>Оформить заказ</span></a></div>
             </div>
           </div>
         </div>
       </div>
       <script type="text/javascript" src="js/all-plugins.min.js"></script>
+      <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAuu-TeMzXX-X7rBtKjmmVPt12Y_9LtHbY&amp;language=ru"></script>
       <script type="text/javascript" src="js/main.js"></script>
     </div>
   </body>

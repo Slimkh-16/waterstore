@@ -222,7 +222,26 @@ header.header.clearfix
               span.icon-05-arrow-down-header
             #drop-cart.cart-container.dropdown-content.drop-head.drop-head--cart
               .cart-container-box
-                .cart-row
+                .cart-row(data-product-id="1")
+                  .cart-col.cart-col--1
+                    a(href='#').cart-col-item
+                      span.cart-col__img
+                        img(src="assets/images/cart1.jpg", alt="")
+                      span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+
+                  .cart-col.cart-col--2
+                    .quantity-wrap
+                      span.minus-icon
+                        | &#8722;
+                      input.quantity(type='text', value='1',data-price-product="14000")
+                      span.plus-icon
+                        | +
+                  .cart-col.cart-col--3
+                    span.js_item_total 14000
+                    |&nbsp; грн
+                  .cart-col.cart-col--4
+                    span.icon-21-clear-filters.js_remove_item
+                .cart-row(data-product-id="2")
                   .cart-col.cart-col--1
                     a(href='#').cart-col-item
                       span.cart-col__img
@@ -240,7 +259,7 @@ header.header.clearfix
                     |&nbsp; грн
                   .cart-col.cart-col--4
                     span.icon-21-clear-filters.js_remove_item
-                .cart-row
+                .cart-row(data-product-id="3")
                   .cart-col.cart-col--1
                     a(href='#').cart-col-item
                       span.cart-col__img
@@ -250,15 +269,15 @@ header.header.clearfix
                     .quantity-wrap
                       span.minus-icon
                         | &#8722;
-                      input.quantity(type='text', value='1',data-price-product="16000")
+                      input.quantity(type='text', value='1',data-price-product="14000")
                       span.plus-icon
                         | +
                   .cart-col.cart-col--3
-                    span.js_item_total 16000
+                    span.js_item_total 14000
                     |&nbsp; грн
                   .cart-col.cart-col--4
                     span.icon-21-clear-filters.js_remove_item
-                .cart-row
+                .cart-row(data-product-id="4")
                   .cart-col.cart-col--1
                     a(href='#').cart-col-item
                       span.cart-col__img
@@ -268,12 +287,12 @@ header.header.clearfix
                     .quantity-wrap
                       span.minus-icon
                         | &#8722;
-                      input.quantity(type='text', value='1',data-price-product="20000")
+                      input.quantity(type='text', value='1',data-price-product="14000")
                       span.plus-icon
                         | +
                   .cart-col.cart-col--3
-                    span.js_item_total 20000
-                    |&nbsp; грн
+                    span.js_item_total 14000
+                    | &nbsp; грн
                   .cart-col.cart-col--4
                     span.icon-21-clear-filters.js_remove_item
               .go-to-button.align-right

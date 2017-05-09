@@ -1,3 +1,4 @@
+.overlay
 footer.footer
   .footer-container
     .container
@@ -72,12 +73,45 @@ footer.footer
 #modal-thank.modal
   .modal-content
     span.modal-action.modal-close.modal-close--top
-      span.icon-ico28
+      span.icon-25-plus-tovar
     .container.align-center
       .modal-head
         | Спасибо, Ваша заявка отправлена!
       .modal-body
         p Наш менеджер свяжется с Вами в течение 15 минут.
-        span.waves-effect.waves-light.btn.modal-close Закрыть
+        .modal-foot.clearfix
+          span.waves-effect.waves-light.btn.modal-close.left Закрыть
+#modal-product.modal
+  .modal-content
+    span.modal-action.modal-close.modal-close--top
+      span.icon-25-plus-tovar
+    .container.align-center
+      .modal-head
+        | Товар добавлен в корзину!
+      .modal-body
+        .cart-container-box
+          .cart-row(data-product-id="10")
+            .cart-col.cart-col--1
+              a(href='#').cart-col-item
+                span.cart-col__img
+                  img(src="assets/images/cart1.jpg", alt="")
+                span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+            .cart-col.cart-col--2
+              .quantity-wrap
+                span.minus-icon −
+                input.quantity(type='text', value='1', data-price-product='14000')
+                span.plus-icon +
+
+            .cart-col.cart-col--3
+              span.js_item_total 14000
+              | &nbsp; грн
+        .modal-foot.clearfix
+          span.waves-effect.waves-light.modal-close.left
+            span.icon-16-arrow-link
+            | Продолжить покупки
+          a(href="#").btn.btn--green.right
+            .btn-animate
+            span Оформить заказ
 script(type='text/javascript', src='js/all-plugins.min.js')
+script(type='text/javascript', src='http://maps.googleapis.com/maps/api/js?key=AIzaSyAuu-TeMzXX-X7rBtKjmmVPt12Y_9LtHbY&language=ru')
 script(type='text/javascript', src='js/main.js')

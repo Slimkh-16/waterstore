@@ -1,0 +1,384 @@
+doctype html
+html
+  head
+    include _head
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    noscript
+      div
+        strong Для полной функциональности этого сайта необходимо включить JavaScript. Вот 
+        a(href="https://artjoker.ua/ru/blog/how-to-enable-javascript/" target="_blank") инструкции,
+        | как включить JavaScript в вашем браузере. 
+    //if lte IE 8
+      p.off-js
+        | Ваш браузер устарел, пожалуйста 
+        b обновите
+        |  его.
+    // PRELOADER
+    include _preloader
+    // PRELOADER
+    //mobile menu
+    include _mobile__nav
+    .page-wrap
+      // wrapper start
+      .wrapper
+        // header SECTION
+        include _header
+
+        // header SECTION
+        //breadcrumbs
+        section.breadcrumbs
+          .container
+            ul
+              li
+                a(href="#") Главная
+              li
+                span Корзина
+                .head-page Корзина
+        //order-section
+        section.order-section
+          .container
+            .product-tabs
+              .product-tab__navs
+                ul.tabs
+                  li.tab
+                    a.active(href='#tab1') Корзина
+                  li.tab
+                    a(href='#tab2') Оформление заказа
+              .order-tabs-content
+                #tab1.tabp-pane.parent-cart
+                  table
+                    thead
+                      tr
+                        th Товар
+                        th Цена
+                        th Кол-во
+                        th(colspan="2") Сумма
+                    tbody
+                      tr.cart-row(data-product-id="1")
+                        td
+                          a(href='#').cart-col-item
+                            span.cart-col__img
+                              img(src="assets/images/cart1.jpg", alt="")
+                            span.cart-col__txt
+                              b Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                              | Тепловая мощность, кВт - 19.1  |  Производительность горячей воды, л/мин - 11.4
+                        td
+                          | 14 400 грн
+                        td
+                          .quantity-wrap
+                            span.minus-icon
+                              | &#8722;
+                            input.quantity(type='text', value='1',data-price-product="14000")
+                            span.plus-icon
+                              | +
+                        td
+                          span.js_item_total 14000
+                          | &nbsp; грн
+                        td
+                          span.icon-26-clear-zakaz.js_remove_item
+                      tr.cart-row(data-product-id="2")
+                        td
+                          a(href='#').cart-col-item
+                            span.cart-col__img
+                              img(src="assets/images/cart1.jpg", alt="")
+                            span.cart-col__txt
+                              b Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                              | Тепловая мощность, кВт - 19.1  |  Производительность горячей воды, л/мин - 11.4
+                        td
+                          | 14 400 грн
+                        td
+                          .quantity-wrap
+                            span.minus-icon
+                              | &#8722;
+                            input.quantity(type='text', value='1',data-price-product="14000")
+                            span.plus-icon
+                              | +
+                        td
+                          span.js_item_total 14000
+                          | &nbsp; грн
+                        td
+                          span.icon-26-clear-zakaz.js_remove_item
+                      tr.cart-row(data-product-id="3")
+                        td
+                          a(href='#').cart-col-item
+                            span.cart-col__img
+                              img(src="assets/images/cart1.jpg", alt="")
+                            span.cart-col__txt
+                              b Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                              | Тепловая мощность, кВт - 19.1  |  Производительность горячей воды, л/мин - 11.4
+                        td
+                          | 14 400 грн
+                        td
+                          .quantity-wrap
+                            span.minus-icon
+                              | &#8722;
+                            input.quantity(type='text', value='1',data-price-product="14000")
+                            span.plus-icon
+                              | +
+                        td
+                          span.js_item_total 14000
+                          | &nbsp; грн
+                        td
+                          span.icon-26-clear-zakaz.js_remove_item
+                      tr.cart-row(data-product-id="4")
+                        td
+                          a(href='#').cart-col-item
+                            span.cart-col__img
+                              img(src="assets/images/cart1.jpg", alt="")
+                            span.cart-col__txt
+                              b Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                              | Тепловая мощность, кВт - 19.1  |  Производительность горячей воды, л/мин - 11.4
+                        td
+                          | 14 400 грн
+                        td
+                          .quantity-wrap
+                            span.minus-icon
+                              | &#8722;
+                            input.quantity(type='text', value='1',data-price-product="14000")
+                            span.plus-icon
+                              | +
+                        td
+                          span.js_item_total 14000
+                          | &nbsp; грн
+                        td
+                          span.icon-26-clear-zakaz.js_remove_item
+                    tfoot
+                      td(colspan="5")
+                        | Итого &nbsp;
+
+                        span.js_total_price 0
+                        | &nbsp; грн
+                        a(href="#").btn.btn--green
+                          .btn-animate
+                          span Оформить заказ
+
+
+                  .cart-button-group
+                    a(href="#")
+                      span.icon-27-back-to-shop
+                      | Продолжить покупки
+                    a(href="#")
+                      span.icon-26-clear-zakaz
+                      | Очистить корзину
+                #tab2.tab-pane
+                  .order-container
+                    .heading-section.align-center Оформление заказа
+                    .row
+                      .col.l6.s12.right
+                        .products-in-cart
+                          .products-in-cart__head Товары в корзине
+                          .cart-container-box
+                            .cart-row(data-product-id="1")
+                              .cart-col.cart-col--1
+                                a(href='#').cart-col-item
+                                  span.cart-col__img
+                                    img(src="assets/images/cart1.jpg", alt="")
+                                  span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+
+                              .cart-col.cart-col--2
+                                .quantity-wrap
+                                  span.minus-icon
+                                    | &#8722;
+                                  input.quantity(type='text', value='1',data-price-product="14000")
+                                  span.plus-icon
+                                    | +
+                              .cart-col.cart-col--3
+                                span.js_item_total 14000
+                                | &nbsp; грн
+                              .cart-col.cart-col--4
+                                span.icon-21-clear-filters.js_remove_item
+                            .cart-row(data-product-id="2")
+                              .cart-col.cart-col--1
+                                a(href='#').cart-col-item
+                                  span.cart-col__img
+                                    img(src="assets/images/cart1.jpg", alt="")
+                                  span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                              .cart-col.cart-col--2
+                                .quantity-wrap
+                                  span.minus-icon
+                                    | &#8722;
+                                  input.quantity(type='text', value='1',data-price-product="16000")
+                                  span.plus-icon
+                                    | +
+                              .cart-col.cart-col--3
+                                span.js_item_total 14000
+                                | &nbsp; грн
+                              .cart-col.cart-col--4
+                                span.icon-21-clear-filters.js_remove_item
+                            .cart-row(data-product-id="3")
+                              .cart-col.cart-col--1
+                                a(href='#').cart-col-item
+                                  span.cart-col__img
+                                    img(src="assets/images/cart1.jpg", alt="")
+                                  span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                              .cart-col.cart-col--2
+                                .quantity-wrap
+                                  span.minus-icon
+                                    | &#8722;
+                                  input.quantity(type='text', value='1',data-price-product="20000")
+                                  span.plus-icon
+                                    | +
+                              .cart-col.cart-col--3
+                                span.js_item_total 14000
+                                | &nbsp; грн
+                              .cart-col.cart-col--4
+                                span.icon-21-clear-filters.js_remove_item
+                            .cart-row(data-product-id="4")
+                              .cart-col.cart-col--1
+                                a(href='#').cart-col-item
+                                  span.cart-col__img
+                                    img(src="assets/images/cart1.jpg", alt="")
+                                  span.cart-col__txt Protherm Рысь Lynx 18/25 MKV газовый двухконтурный конденсационный настенный котел
+                              .cart-col.cart-col--2
+                                .quantity-wrap
+                                  span.minus-icon
+                                    | &#8722;
+                                  input.quantity(type='text', value='1',data-price-product="20000")
+                                  span.plus-icon
+                                    | +
+                              .cart-col.cart-col--3
+                                span.js_item_total 14000
+                                | &nbsp; грн
+                              .cart-col.cart-col--4
+                                span.icon-21-clear-filters.js_remove_item
+
+
+                          .products-in-cart__total
+                            | Итого:
+                            span.js_total_price 14000
+                            | &nbsp; грн
+                      .col.l6.s12
+                        .order-nav-tab
+                          ul.tabs
+                            li.tab
+                              a.active(href='#tab1-1') Новый покупатель
+                            li.tab
+                              a(href='#tab1-2') Постоянный покупатель
+                        .order-container-tab
+                          #tab1-1.tab-pane
+                            form(action="#").js_validate
+                              .form-heading личные данные
+                              .input-field.required-field(data-error='Поле не заполнено')
+                                span.label-field ФИО*
+                                input(type='text', required='')
+                              .input-field.required-field(data-error='Поле не заполнено')
+                                span.label-field Телефон*
+                                input(type='tel', required='',data-validate="phone")
+                              .input-field.required-field(data-error='Поле не заполнено')
+                                span.label-field Email*
+                                input(type='email', required='',data-validate="email")
+                              .input-field.required-field(data-error='Поле не заполнено')
+                                span.label-field Password*
+                                input(type='password', required='')
+                              .form-heading Данные по доставке
+                              .input-field.required-field(data-error='Поле не заполнено')
+                                span.label-field Город
+                                select
+                                  option(value="1") Kiev
+                                  option(value="1") Kharkov
+                                  option(value="1") Odessa
+                              .radio-group.input-field.clearfix
+                                .radio-box-form
+                                  input#radio1.with-gap(type="radio",name="deliveri",checked)
+                                  label(for="radio1") Курьером
+                                .radio-box-form
+                                  input#radio2.with-gap(type="radio",name="deliveri")
+                                  label(for="radio2") Самовывоз
+                                .radio-box-form
+                                  input#radio3.with-gap(type="radio",name="deliveri")
+                                  label(for="radio3") Курьерская служба
+                              .cheack-box.other-field.clearfix
+                                input#check11.filled-in.js_change-field(type='checkbox')
+                                label(for='check11')
+                                  span Другой получатель
+                              .other-peop
+                                .input-field.required-field(data-error='Поле не заполнено')
+                                  span.label-field ФИО получателя*
+                                  input(type='text', required='')
+                                .input-field.required-field(data-error='Поле не заполнено')
+                                  span.label-field Телефон получателя*
+                                  input(type='tel', required='',data-validate="phone")
+                                .input-field.required-field(data-error='Поле не заполнено')
+                                  span.label-field Email получателя*
+                                  input(type='email', required='',data-validate="email")
+                                .input-field.required-field(data-error='Поле не заполнено')
+                                  span.label-field Желаемая дата доставки*
+                                  input(type='text', required='',placeholder="ДД/ММ/ГГ")
+                                .input-field.required-field(data-error='Поле не заполнено')
+                                  span.label-field Улица*
+                                  input(type='text', required='')
+                                .row
+                                  .col.l6.s12
+                                    .input-field.required-field(data-error='Поле не заполнено')
+                                      span.label-field Дом*
+                                      input(type='text', required='')
+                                  .col.l6.s12
+                                    .input-field.required-field(data-error='Поле не заполнено')
+                                      span.label-field Дом*
+                                      input(type='Квартира', required='')
+                              .form-heading Данные по доставке
+                              .radio-group.input-field
+                                span.label-field Форма оплаты
+                                .radio-box-form
+                                  input#radio4.with-gap(type="radio",name="type-pay",checked="")
+                                  label(for="radio4") Оплата курьеру
+                                .radio-box-form
+                                  input#radio5.with-gap(type="radio",name="type-pay")
+                                  label(for="radio5") Наложенный платёж
+                              .add-comment.input-field.toggle-parent
+                                span.toggle-butt Добавить комментарий
+                                .toggle-hidden
+                                  span.label-field Kомментарий
+                                  textarea.materialize-textarea
+                              .cheack-box
+                                input#check21.filled-in(type='checkbox')
+                                label(for='check21') Я согласен с условиями предоставления персональных данных интернет-магазину
+                              .capcha
+                                img(src="assets/images/capcha.jpg", alt="")
+                              button(type="submit").btn.btn--green
+                                .btn-animate
+                                span Заказ подтверждаю
+                          #tab1-2.tab-pane
+        //how-work section
+        section.how-work
+          .container
+            .heading-section.align-center.clearfix
+              | Как работает интернет-магазин Waterpark
+            .row
+              .col.l3.m6.s12
+                .how-work-item
+                  .how-work-item__icon
+                    span 1
+                    img(src='assets/images/how1.png')
+                  .how-work-item__txt Вы оставляете заявку, совершив заказ товара через корзину на сайте
+                    a(href="#")    waterpark.com.ua
+              .col.l3.m6.s12
+                .how-work-item
+                  .how-work-item__icon
+                    span 2
+                    img(src='assets/images/how2.png')
+                  .how-work-item__txt Мы оформляем Ваш заказ и связываемся по указанным контактам в течении
+                    b   15 минут
+              .col.l3.m6.s12
+                .how-work-item
+                  .how-work-item__icon
+                    span 3
+                    img(src='assets/images/how3.png')
+                  .how-work-item__txt Вы подтверждаете заказ, мы оговариваем
+                    br
+                    b условия доставки, оплаты
+              .col.l3.m6.s12
+                .how-work-item
+                  .how-work-item__icon
+                    span 4
+                    img(src='assets/images/how4.png')
+                  .how-work-item__txt Вы забираете товар и оплачиваете его
+                    br
+                    b удобным для Вас способом
+      //footer
+      include _footer

@@ -1115,13 +1115,14 @@ h5 {
   .head-search [class*='icon-'] {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 52%;
     left: 20px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 18px;
     line-height: 18px;
+    height: 18px;
     color: #9c9c9c;
     -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out; }
@@ -1427,7 +1428,8 @@ h5 {
   z-index: 10;
   font-size: 0;
   line-height: 5px;
-  color: #576670; }
+  color: #576670;
+  pointer-events: none; }
 
 .input-field .select-wrapper span.caret:before {
   content: '\E021';
@@ -1702,6 +1704,7 @@ h5 {
 .navigation-catalog__butt {
   color: #fff !important; }
   .navigation-catalog__butt .hamburger {
+    padding-top: 4px;
     position: absolute;
     z-index: 2;
     right: 19px; }
@@ -1825,9 +1828,9 @@ h5 {
     display: block !important;
     opacity: 1 !important; }
   .index-page .hamburger-box {
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
+    -webkit-transform: rotate(-90deg) translateX(3px);
+    -ms-transform: rotate(-90deg) translateX(3px);
+    transform: rotate(-90deg) translateX(3px); }
   .index-page .hamburger-inner:before {
     -webkit-transform: translate3d(-8px, 0, 0) rotate(-45deg) scaleX(0.7);
     transform: translate3d(-8px, 0, 0) rotate(-45deg) scaleX(0.7); }
@@ -1873,8 +1876,6 @@ h5 {
         font-size: 8px;
         line-height: 10px;
         color: #abb0b5; }
-      .navigation-catalog__nav ul li:last-of-type {
-        border-bottom: none; }
       .navigation-catalog__nav ul li a {
         display: block;
         line-height: 115px;
@@ -1896,6 +1897,8 @@ h5 {
 
 .navigation-catalog__body {
   display: none;
+  border-bottom: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
   vertical-align: top;
   width: 75%;
   height: 460px;
@@ -2547,7 +2550,9 @@ h5 {
     vertical-align: middle;
     margin: 0 10px;
     height: 38px;
-    line-height: 38px; }
+    line-height: 34px; }
+    .filter-button .btn.btn-default {
+      line-height: 40px; }
 
 .btn-green {
   background: #e5fcf1;
@@ -2606,7 +2611,7 @@ h5 {
       font-size: 16px;
       line-height: 16px;
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: -4px;
       margin-left: 8px; }
 
 .filter-category {
@@ -2955,17 +2960,21 @@ h5 {
     margin-top: 0; }
   .product-order-button .btn {
     height: 42px;
-    line-height: 42px; }
+    line-height: 40px; }
   .product-order-button .btn-to-cart {
     width: -webkit-calc(100% - 137px);
     width: calc(100% - 137px); }
+    .product-order-button .btn-to-cart span {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: 2px; }
 
 .buy-one-click {
   width: 100%;
   color: #48d392; }
   .buy-one-click span {
     font-size: 24px;
-    vertical-align: -4px; }
+    vertical-align: -7px; }
 
 .product-char {
   font-size: 14px;
@@ -3094,6 +3103,7 @@ h5 {
   margin-bottom: 0 !important; }
 
 .product-container-info {
+  padding: 25px 0 0;
   font-size: 14px;
   line-height: 22px; }
   .product-container-info p {
@@ -4208,6 +4218,8 @@ canvas {
   margin: auto; }
 
 @media only screen and (max-width: 1500px) {
+  .product-container-info {
+    padding-top: 0; }
   .action-item {
     width: 25% !important; }
   .blog-one .left, .blog-one .right {
@@ -4390,7 +4402,7 @@ canvas {
   .filter-section ul {
     float: none;
     display: block;
-    text-align: center; }
+    text-align: left; }
     .filter-section ul li {
       float: none;
       display: inline-block; }
@@ -4480,6 +4492,8 @@ canvas {
     padding: 1px; }
 
 @media only screen and (max-width: 767px) {
+  .products-in-cart {
+    display: none; }
   .order-tabs-content .cart-col-item .cart-col__txt {
     width: 100%;
     text-align: center; }
@@ -4712,10 +4726,13 @@ canvas {
     -ms-transform: none;
     transform: none; }
   .filter-section-body {
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 105px; }
   .flt-sect-right {
     position: static;
-    text-align: center; }
+    text-align: left;
+    padding: 0; }
   .filter-section-top {
     padding-bottom: 5px; }
   .flt-sect-left {
@@ -4765,7 +4782,9 @@ canvas {
     padding: 15px 0;
     border-bottom: 1px solid #e5e5e5; }
   .modal {
-    padding: 20px 15px; }
+    padding: 20px 15px;
+    overflow: hidden;
+    overflow-y: auto; }
   .modal-close--top {
     right: 5px;
     top: 5px; }

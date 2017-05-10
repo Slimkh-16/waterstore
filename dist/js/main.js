@@ -117,7 +117,7 @@ function preloader() {
                 var myLatlng = new google.maps.LatLng(coords[0], coords[1]);
                 var myCenter = new google.maps.LatLng(coords[0], coords[1]);
                 var mapOptions = {
-                    zoom: 10,
+                    zoom: 15,
                     center: myCenter,
                     scrollwheel: false,
                     disableDefaultUI: false,
@@ -299,6 +299,11 @@ function preloader() {
                 }
                 $('.head-search .head-search-drop').fadeOut(500);
                 $('.overlay').fadeOut(500);
+
+            });
+            $(document).on('click','.overlay',function(){
+                $('.modal').modal('close');
+                $('.dropdown-button').dropdown('close');
             });
         },
         dropdownFunc: function () {
@@ -471,6 +476,35 @@ function preloader() {
                 nextButton: '.general-slider .swiper-button-next',
                 prevButton: '.general-slider .swiper-button-prev',
                 parallax: true
+            });
+            var swiper_brand = new Swiper('.brand-slider .swiper-container', {
+                loop: true,
+                autoplay: 2000,
+                speed: 2000,
+                slidesPerView: 6,
+                spaceBetween: 15,
+                breakpoints: {
+                    1400: {
+                        slidesPerView: 5,
+                        spaceBetween: 15
+                    },
+                    1300: {
+                        slidesPerView: 4,
+                        spaceBetween: 15
+                    },
+                    805: {
+                        slidesPerView: 3,
+                        spaceBetween: 15
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 15
+                    },
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    }
+                }
             });
             $('.product-slider-cont').each(function (i, item) {
                 var lp = false;

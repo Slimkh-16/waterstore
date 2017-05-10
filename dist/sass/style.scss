@@ -461,11 +461,12 @@ h5 {
   [class*='icon-'] {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 52%;
     left: 20px;
     transform:translateY(-50%);
     font-size: 18px;
     line-height: 18px;
+    height: 18px;
     color: #9c9c9c;
     @include anim;
   }
@@ -765,7 +766,8 @@ h5 {
     z-index: 10;
     font-size: 0;
     line-height: 5px;
-    color: $t2;}
+    color: $t2;
+    pointer-events: none;}
     .input-field .select-wrapper span.caret:before {
       content: '\E021';
       font-family: 'Icons';
@@ -1020,6 +1022,7 @@ h5 {
 .navigation-catalog__butt {
   color: #fff !important;
   .hamburger {
+    padding-top: 4px;
     position: absolute;
     z-index: 2;
     right: 19px;
@@ -1132,7 +1135,7 @@ h5 {
     opacity: 1 !important;
   }
   .index-page {
-    .hamburger-box {transform:rotate(-90deg);}
+    .hamburger-box {transform:rotate(-90deg) translateX(3px);}
     .hamburger-inner:before {
       transform: translate3d(-8px,0,0) rotate(-45deg) scaleX(.7)
     }
@@ -1182,7 +1185,7 @@ h5 {
         line-height: 10px;
         color: #abb0b5;
       }
-      &:last-of-type {border-bottom: none;}
+      //&:last-of-type {border-bottom: none;}
       a {
         display: block;
         line-height: 115px;
@@ -1210,6 +1213,8 @@ h5 {
 
 .navigation-catalog__body {
   display: none;
+  border-bottom:1px solid #e8e8e8;
+  border-right:1px solid #e8e8e8;
   vertical-align: top;
   width: 75%;
   height: 460px;
@@ -1880,7 +1885,10 @@ h5 {
     vertical-align: middle;
     margin: 0 10px;
     height: 38px;
-    line-height: 38px;
+    line-height: 34px;
+    &.btn-default {
+      line-height: 40px;
+    }
   }
 }
 .btn-green {
@@ -1938,7 +1946,7 @@ h5 {
       font-size: 16px;
       line-height: 16px;
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: -4px;
       margin-left:8px;
     }
   }
@@ -2286,10 +2294,15 @@ h5 {
   }
   .btn {
     height: 42px;
-    line-height: 42px;
+    line-height: 40px;
   }
   .btn-to-cart {
     width:calc(100% - 137px);
+    span {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align:2px;
+    }
   }
 }
 
@@ -2298,7 +2311,7 @@ h5 {
   color: #48d392;
   span {
     font-size: 24px;
-    vertical-align: -4px;
+    vertical-align: -7px;
   }
 }
 .product-char {
@@ -2452,7 +2465,7 @@ h5 {
   margin-bottom: 0 !important;
 }
 .product-container-info {
-  //padding:25px 0 0;
+  padding:25px 0 0;
   font-size:14px;
   line-height: 22px;
   p {
@@ -3705,6 +3718,8 @@ canvas {
 }
 //media
 @media only screen and (max-width: 1500px) {
+  .product-container-info {
+    padding-top: 0;}
   .action-item {
     width: 25% !important;
   }
@@ -3936,7 +3951,7 @@ canvas {
   .filter-section ul {
     float:none;
     display: block;
-    text-align: center;
+    text-align: left;
     li {
       float:none;
       display: inline-block;
@@ -4039,6 +4054,9 @@ canvas {
   top: 40px;.head-search {
   padding: 1px;}}
 @media only screen and (max-width: 767px) {
+  .products-in-cart {
+    display: none;
+  }
   .order-tabs-content .cart-col-item .cart-col__txt {
     width: 100%;
     text-align: center;}
@@ -4318,10 +4336,14 @@ canvas {
   .filter-close {
     position: static;transform:none;}
   .filter-section-body {
+    padding-left: 5px;
+    padding-right: 5px;
     padding-bottom: 105px;}
   .flt-sect-right {
     position: static;
-    text-align: center;
+    text-align: left;
+    //padding-left: 17px;
+    padding: 0;
   }
   .filter-section-top {
     padding-bottom: 5px;}
@@ -4377,6 +4399,8 @@ canvas {
     border-bottom:1px solid #e5e5e5;}
   .modal {
     padding: 20px 15px;
+    overflow: hidden;
+    overflow-y: auto;
   }
   .modal-close--top {
     right: 5px;

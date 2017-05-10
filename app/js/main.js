@@ -127,7 +127,7 @@ function preloader() {
                 var marker = new google.maps.Marker({
                     position: myLatlng,
                     map: map,
-                    icon: 'images/marker.png'
+                    icon: 'images/ico-16.png'
                 });
             }
         },
@@ -150,7 +150,7 @@ function preloader() {
 
                     }
                 });
-            },700)
+            },2000)
 
         },
         filterfunction: function () {
@@ -273,10 +273,10 @@ function preloader() {
             });
             // size catalog
             if (window.innerWidth > 992) {
-                _catBody.width($('.container').outerWidth() - _catButt.outerWidth() - 60);
+                _catBody.width($('.container').outerWidth() - _catButt.outerWidth() - 30);
                 _catNav.width(_catButt.outerWidth());
                 $(window).resize(function () {
-                    _catBody.width($('.container').outerWidth() - _catButt.outerWidth() - 60);
+                    _catBody.width($('.container').outerWidth() - _catButt.outerWidth() - 30);
                     _catNav.width(_catButt.outerWidth());
                 });
             }
@@ -294,7 +294,7 @@ function preloader() {
                 }
             });
             $(document).on('click', function (e) {
-                if ($(e.target).closest(".head-search-drop,.head-dropdown__butt").length) {
+                if ($(e.target).closest(".head-search-drop,.head-dropdown__butt,.dropdown-content").length) {
                     return ;
                 }
                 $('.head-search .head-search-drop').fadeOut(500);
@@ -495,7 +495,7 @@ function preloader() {
                             slidesPerView: 4,
                             spaceBetween: 15
                         },
-                        768: {
+                        805: {
                             slidesPerView: 3,
                             spaceBetween: 15
                         },
@@ -505,7 +505,7 @@ function preloader() {
                         },
                         500: {
                             slidesPerView: 2,
-                            spaceBetween: 15
+                            spaceBetween: 10
                         }
                     }
                 });
@@ -565,7 +565,7 @@ function preloader() {
                 }, 2000);
                 setTimeout(function () {
                     document.querySelector('.preloader').style.display = 'none';
-                }, 2500);
+                }, 2600);
             });
         },
         validateForm: function () {
@@ -769,9 +769,9 @@ function preloader() {
 
             elem[i].style.height = maxH + "px";
         }
-        for (var j = 0; j < elem.length; ++j) {
-            elem[i].style.height = maxH + "px";
-        }
+        // for (var j = 0; j < elem.length; ++j) {
+        //     elem[i].style.height = maxH + "px";
+        // }
 
     };
 })();

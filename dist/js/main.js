@@ -507,45 +507,45 @@ function preloader() {
                 }
             });
 
-            // $('.product-slider-cont').each(function (i, item) {
-            //     var lp = false;
-            //     if ($(item).find('.swiper-slide').length > 4) {
-            //         lp = true
-            //     }
-            //     if (_winWidth < 1023 && $(item).find('.swiper-slide').length > 2) {
-            //         lp = true
-            //     }
-            //     swiper2 = new Swiper($(item).find('.swiper-container'), {
-            //         loop: lp,
-            //         speed: 1500,
-            //         slidesPerView: 5,
-            //         spaceBetween: 25,
-            //         nextButton: $(item).find('.swiper-button-next'),
-            //         prevButton: $(item).find('.swiper-button-prev'),
-            //         breakpoints: {
-            //             1400: {
-            //                 spaceBetween: 15
-            //             },
-            //             1300: {
-            //                 slidesPerView: 4,
-            //                 spaceBetween: 15
-            //             },
-            //             805: {
-            //                 slidesPerView: 3,
-            //                 spaceBetween: 15
-            //             },
-            //             640: {
-            //                 slidesPerView: 2,
-            //                 spaceBetween: 15
-            //             },
-            //             500: {
-            //                 slidesPerView: 2,
-            //                 spaceBetween: 10
-            //             }
-            //         }
-            //     });
-            //
-            // });
+            $('.product-slider-cont').each(function (i, item) {
+                var lp = false;
+                if ($(item).find('.swiper-slide').length > 4) {
+                    lp = true
+                }
+                if (_winWidth < 1023 && $(item).find('.swiper-slide').length > 2) {
+                    lp = true
+                }
+                swiper2 = new Swiper($(item).find('.swiper-container'), {
+                    loop: lp,
+                    speed: 1500,
+                    slidesPerView: 5,
+                    spaceBetween: 25,
+                    nextButton: $(item).find('.swiper-button-next'),
+                    prevButton: $(item).find('.swiper-button-prev'),
+                    breakpoints: {
+                        1400: {
+                            spaceBetween: 15
+                        },
+                        1300: {
+                            slidesPerView: 4,
+                            spaceBetween: 15
+                        },
+                        805: {
+                            slidesPerView: 3,
+                            spaceBetween: 15
+                        },
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 15
+                        },
+                        500: {
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        }
+                    }
+                });
+
+            });
             var settings = {
                     loop: false,
                     direction: 'vertical',
@@ -769,7 +769,7 @@ function preloader() {
     window.addEventListener('scroll', function () {
         scrollTopPosition = window.pageYOffset ? window.pageYOffset : (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
     });
-    window.onload = function () {
+    window.addEventListener('load', function () {
         if (document.getElementById('.swiper-caption') !== undefined) {
             captionPosition('.swiper-caption');
         }
@@ -784,7 +784,6 @@ function preloader() {
             onShow:function(tab) {
                 activeTab = tab.selector;
                 swiper2.destroy(true, true);
-                // swiper2.update(true);
                 sliderTab(activeTab);
             }
         });
@@ -825,8 +824,9 @@ function preloader() {
                     }
                 }
             });
+            swiper2.update(true);
         }
-    };
+    });
     window.addEventListener('resize', function () {
         if (document.getElementById('.swiper-caption') !== undefined) {
             captionPosition('.swiper-caption');

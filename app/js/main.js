@@ -11,7 +11,7 @@ function preloader() {
         scrollTopPosition,
         browserYou,
         _winWidth = $(window).outerWidth(),
-        swiper4, swiper5;
+        swiper4, swiper5,swiper2;
     var genFunc = {
 
         initialized: false,
@@ -506,45 +506,46 @@ function preloader() {
                     }
                 }
             });
-            $('.product-slider-cont').each(function (i, item) {
-                var lp = false;
-                if ($(item).find('.swiper-slide').length > 4) {
-                    lp = true
-                }
-                if (_winWidth < 1023 && $(item).find('.swiper-slide').length > 2) {
-                    lp = true
-                }
-                var swiper2 = new Swiper($(item).find('.swiper-container'), {
-                    loop: lp,
-                    speed: 1500,
-                    slidesPerView: 5,
-                    spaceBetween: 25,
-                    nextButton: $(item).find('.swiper-button-next'),
-                    prevButton: $(item).find('.swiper-button-prev'),
-                    breakpoints: {
-                        1400: {
-                            spaceBetween: 15
-                        },
-                        1300: {
-                            slidesPerView: 4,
-                            spaceBetween: 15
-                        },
-                        805: {
-                            slidesPerView: 3,
-                            spaceBetween: 15
-                        },
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 15
-                        },
-                        500: {
-                            slidesPerView: 2,
-                            spaceBetween: 10
-                        }
-                    }
-                });
 
-            });
+            // $('.product-slider-cont').each(function (i, item) {
+            //     var lp = false;
+            //     if ($(item).find('.swiper-slide').length > 4) {
+            //         lp = true
+            //     }
+            //     if (_winWidth < 1023 && $(item).find('.swiper-slide').length > 2) {
+            //         lp = true
+            //     }
+            //     swiper2 = new Swiper($(item).find('.swiper-container'), {
+            //         loop: lp,
+            //         speed: 1500,
+            //         slidesPerView: 5,
+            //         spaceBetween: 25,
+            //         nextButton: $(item).find('.swiper-button-next'),
+            //         prevButton: $(item).find('.swiper-button-prev'),
+            //         breakpoints: {
+            //             1400: {
+            //                 spaceBetween: 15
+            //             },
+            //             1300: {
+            //                 slidesPerView: 4,
+            //                 spaceBetween: 15
+            //             },
+            //             805: {
+            //                 slidesPerView: 3,
+            //                 spaceBetween: 15
+            //             },
+            //             640: {
+            //                 slidesPerView: 2,
+            //                 spaceBetween: 15
+            //             },
+            //             500: {
+            //                 slidesPerView: 2,
+            //                 spaceBetween: 10
+            //             }
+            //         }
+            //     });
+            //
+            // });
             var settings = {
                     loop: false,
                     direction: 'vertical',
@@ -729,7 +730,6 @@ function preloader() {
             /*if(isMobile === false) {
              $('.parallax').parallax();
              }*/
-
             $('.modal').modal({
                 opacity: 1,
                 ready: function(){
@@ -775,6 +775,56 @@ function preloader() {
         }
         if (document.querySelector('.height_') !== undefined) {
             heightBlock('.height_');
+        }
+        // slider in tab
+        var activeTab;
+        activeTab =  $('.product-tab__navs li a.active').attr('href');
+        sliderTab(activeTab)
+        $('.product-tab__navs ul.tabs').tabs({
+            onShow:function(tab) {
+                activeTab = tab.selector;
+                swiper2.destroy(true, true);
+                // swiper2.update(true);
+                sliderTab(activeTab);
+            }
+        });
+        function sliderTab(activeTab) {
+            var lp = false;
+            if ($(activeTab).find('.swiper-slide').length > 4) {
+                lp = true
+            }
+            if (_winWidth < 1023 && $(activeTab).find('.swiper-slide').length > 2) {
+                lp = true
+            }
+            swiper2 = new Swiper($(activeTab).find('.swiper-container'), {
+                loop: lp,
+                speed: 1500,
+                slidesPerView: 5,
+                spaceBetween: 25,
+                nextButton: $(activeTab).find('.swiper-button-next'),
+                prevButton: $(activeTab).find('.swiper-button-prev'),
+                breakpoints: {
+                    1400: {
+                        spaceBetween: 15
+                    },
+                    1300: {
+                        slidesPerView: 4,
+                        spaceBetween: 15
+                    },
+                    805: {
+                        slidesPerView: 3,
+                        spaceBetween: 15
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 15
+                    },
+                    500: {
+                        slidesPerView: 2,
+                        spaceBetween: 10
+                    }
+                }
+            });
         }
     };
     window.addEventListener('resize', function () {
